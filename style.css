@@ -1,0 +1,36 @@
+body {
+    background-color: #15324f;
+    color: #fff
+}
+
+.underh {
+    text-decoration: none;
+    border-bottom: 10px solid #24d8f0;
+}
+
+.list-group-item {
+    background-color: #15324f;
+    border-left: 1px solid rgb(103, 127, 158);
+    border-right: 1px solid rgb(103, 127, 158);
+    border-top: 1px solid rgb(103, 127, 158);
+    border-bottom: 3px solid rgb(103, 127, 158);
+}
+
+.list-group-item:hover {
+    background-color: #274768;
+}
+
+
+a {
+    color: #24d8f0;
+}
+
+a:hover {
+    color:rgb(103, 127, 158);
+}
+
+
+footer {
+    width: 100%;
+    bottom: 0;
+}
