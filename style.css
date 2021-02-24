@@ -5,7 +5,7 @@ body {
 
 .underh {
     text-decoration: none;
-    border-bottom: 10px solid #24d8f0;
+    border-bottom: 10px solid #FF975E;
 }
 
 .list-group-item {
@@ -22,7 +22,7 @@ body {
 
 
 a {
-    color: #24d8f0;
+    color: #FF975E;
 }
 
 a:hover {
@@ -36,5 +36,16 @@ footer {
 }
 
 svg[width="32"]{
-    color: #24d8f0;
+    color: #c0c0c0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index:-10;
+}
+
+#save {
+    color: #2ED1CB;
 }
