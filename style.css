@@ -1,6 +1,8 @@
 body {
     background-color: #15324f;
     color: #fff;
+    position: relative;
+    min-height: 100%;
 }
 
 .underh {
@@ -8,12 +10,23 @@ body {
     border-bottom: 10px solid #FF975E;
 }
 
+.underh2 {
+    text-decoration: none;
+    border-bottom: 0.5rem solid #fff;
+}
+
+.list-group {
+    border-radius: 0.7rem;
+}
+
 .list-group-item {
     background-color: #15324f;
-    border-left: 1px solid rgb(103, 127, 158);
+    border:0;
+    border-radius: 0rem;
+    /*border-left: 1px solid rgb(103, 127, 158);
     border-right: 1px solid rgb(103, 127, 158);
     border-top: 1px solid rgb(103, 127, 158);
-    border-bottom: 3px solid rgb(103, 127, 158);
+    border-bottom: 3px solid rgb(103, 127, 158);*/
 }
 
 .list-group-item:hover {
@@ -29,12 +42,6 @@ a:hover {
     color:rgb(103, 127, 158);
 }
 
-
-footer {
-    width: 100%;
-    bottom: 0;
-}
-
 svg[width="32"]{
     color: #c0c0c0;
 }
@@ -43,8 +50,8 @@ svg[width="32"]{
     position: absolute;
     bottom: 0;
     width: 100%;
-    min-height: 2.5rem;
-    max-height: 20%;
+    min-height: 0.3rem;
+    max-height: 0.5rem;
     z-index:-10;
 }
 
@@ -52,6 +59,61 @@ svg[width="32"]{
     position: relative;
     min-height: 100vh;
 }
+
+.btn-skill {
+    max-height: 1rem;
+    font-size: 1rem;
+    border-color: #2ED1CB;
+    background-color: #2ED1CB;
+    cursor: default !important;
+}
+
+.btn-unskill {
+    max-height: 1rem;
+    font-size: 1rem;
+    border-color: #2ED1CB;
+    background-color: transparent;
+    cursor: default !important;
+}
+
+.hgrad {
+    font-family: Consolas, "courier new";
+    background: -webkit-linear-gradient(45deg, #FF975E, #FCDA2B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+/* Speech bubble inspired by https://projects.verou.me/bubbly/ */
+.speech-bubble {
+    font-family: Consolas, "courier new";
+    font-size: 0.53rem;
+    color: #274768;
+    position: relative;
+    width: 4.8rem;
+	height: 1.1rem;
+	background: #fff;
+	border-radius: .5em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 55%;
+	width: 0.5rem;
+	height: 0.25rem;
+	border: 0.8rem solid transparent;
+	border-right-color: #fff;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -0.5rem;
+	margin-left: -0.5rem;
+}
+/* */
+
+
+
 
 
 
