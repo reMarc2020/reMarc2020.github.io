@@ -43,9 +43,17 @@ svg[width="32"]{
     position: absolute;
     bottom: 0;
     width: 100%;
+    min-height: 2.5rem;
     max-height: 20%;
     z-index:-10;
 }
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+
 
 #save {
     color: #2ED1CB;
