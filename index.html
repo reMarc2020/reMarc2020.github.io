@@ -10,6 +10,10 @@
         <!-- include Bootstrap Icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 
+        <!-- include web font "Source Code Pro" by Paul D. Hunt -->
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,600;1,300&display=swap" rel="stylesheet">
+
         <!-- include own CSS-Variations -->
         <link rel="stylesheet" href="style.css">
 
@@ -18,9 +22,9 @@
     <body>
         <div id="page-container">
         <!-- Navigation bar -->
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-sm">
             <span class="navbar-brand"><h3>reMarc</h3></span>
-            <div class="container ml-n3 mt-n4">
+            <div class="mt-n4 collapse navbar-collapse">
                 <div class="speech-bubble text-center">
                     <span class="p-2 pt-3 align-middle">hello, world!</span>
                 </div>
@@ -83,27 +87,27 @@
         <div class="container mt-5">
             <h4 class="pb-3">Skills</h4>
             <section class="container row">
-                <span class="col-1">Motivation:</span>
-                <div class="col rounded-pill ml-4 text-right" style="width:100%;background: -webkit-linear-gradient(45deg, #FF975E, #FCDA2B); color:#15324f; font-size: 0.7rem; max-width:100%">
+                <span class="col-lg-1 mt-1">Motivation:</span>
+                <div class="col rounded-pill mt-1 ml-4 text-right" style="width:100%;background: -webkit-linear-gradient(45deg, #FF975E, #FCDA2B); color:#15324f; font-size: 0.7rem; max-width:100%">
                     <span class="align-middle pt-1">100%</span>
                 </div>
             </section>   
-            <section class="container row mt-3">
-                <span class="col-1">HTML:</span>
-                <div class="col rounded-pill ml-4 text-right" style="background-color:#fff; color:#15324f; font-size: 0.7rem; max-width:20%">
+            <section class="container row mt-2">
+                <span class="col-lg-1 mt-1">HTML:</span>
+                <div class="col rounded-pill mt-1 ml-4 text-right" style="background-color:#fff; color:#15324f; font-size: 0.7rem; max-width:20%">
                     <span class="align-middle pt-1">20%</span>
                 </div>
             </section>    
-            <section class="container row mt-3">
-                <span class="col-1">Python:</span>
-                <div class="col rounded-pill ml-4 text-right" style="background-color:#fff; color:#15324f; font-size: 0.7rem; max-width:15%">
+            <section class="container row mt-2">
+                <span class="col-lg-1 mt-1">Python:</span>
+                <div class="col rounded-pill mt-1 ml-4 text-right" style="background-color:#fff; color:#15324f; font-size: 0.7rem; max-width:15%">
                     <span class="align-middle pt-1">15%</span>
                 </div>
                 
             </section>    
-            <section class="container row mt-3">
-                <span class="col-1">C:</span>
-                <div class="col rounded-pill ml-4 text-right" style="background-color:#fff; color:#15324f; font-size: 0.7rem; max-width:5%">
+            <section class="container row mt-2">
+                <span class="col-lg-1 mt-1">C:</span>
+                <div class="col rounded-pill mt-1 ml-4 text-right" style="background-color:#fff; color:#15324f; font-size: 0.7rem; max-width:5%">
                     <span class="align-middle pt-1">5%</span>
                 </div>
                 
@@ -114,13 +118,14 @@
         <!-- Main content -->
         <div class="container mt-5 pt-2">
             <div class="d-flex flex-wrap row">
-                <div class="col pr-5 pt-3">
+                <div class="col-sm pr-5 pt-3">
                     <h4>Courses:</h4>
                     <ul class="list-group">
                         <li class="list-group-item">
                             <div class="row align-items-center">
                                 <div class="col-10">
                                     <h5>HarvardX CS50's Introduction to Computer Science</h5>
+                                    <small class="text-muted">Basics of C, Python, HTML & CSS, Flask & Jinja</small>
                                     <br>
                                     <small>
                                         <a href="https://cs50.harvard.edu/x/2021/">Visit Course page</a>
@@ -130,7 +135,7 @@
                                         </svg>
                                     </small>
                                 </div>
-                                <div class="col">
+                                <div class="col-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
                                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                                         <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
@@ -142,6 +147,10 @@
                             <div class="row align-items-center">
                                 <div class="col-10">
                                     <h5>HarvardX CS50's Web Programming with Python and JavaScript</h5>
+                                    <a data-toggle="collapse" href="#collapse1" role="button">More...</a>
+                                    <div class="card-body collapse" id="collapse1">
+                                        <small class="text-muted">Basics on HTML, CSS, Git, Github, Python & JavaScript</small>
+                                    </div>
                                     <br>
                                     <small>
                                         <a href="https://cs50.harvard.edu/web/2020/">Visit Course page</a>
@@ -151,7 +160,29 @@
                                         </svg>
                                     </small>
                                 </div>
-                                <div class="col">
+                                <div class="col-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row align-items-center">
+                                <div class="col-10">
+                                    <h5>The Odin Project - Foundations</h5>
+                                    
+                                    <small class="text-muted">Basics of HTML, CSS, Git, Github ...</small>
+                                    <br>
+                                    <small>
+                                        <a href="https://www.theodinproject.com/">Visit Course page</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+                                            <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+                                            <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+                                        </svg>
+                                    </small>
+                                </div>
+                                <div class="col-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
                                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                                       </svg>
@@ -161,7 +192,7 @@
                     </ul>
                 </div>
 
-                <div class="col pr-5 pt-3">
+                <div class="col-sm pr-5 pt-3">
                     <h4>Projects:</h4>
                     <ul class="list-group">
                         <li class="list-group-item">None</li>
