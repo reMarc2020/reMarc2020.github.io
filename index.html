@@ -5,6 +5,7 @@
 
         <!-- include Bootstrap v4.6 -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
         
         <!-- include Bootstrap Icons -->
@@ -17,7 +18,7 @@
         <!-- include own CSS-Variations -->
         <link rel="stylesheet" href="style.css">
 
-        <title>reMarc202's Github-Page</title>
+        <title>reMarc on Github</title>
     </head>
     <body>
         <div id="page-container">
@@ -32,11 +33,11 @@
         </nav>
         <!-- Funky headline-->
 
-        <div class="container mt-5" style="padding-bottom:2.5rem;">
-            <h1 class="display-1 hgrad">
+        <div class="container mt-5" style="padding-bottom:1.5rem;">
+            <h1 class="display-3 hgrad">
                 Hi.
             </h1>
-            <h1 class="display-3 hgrad">
+            <h1 class="display-4 hgrad">
                 I'm <span class="underh2">Marc</span> and this is my <u class="underh2">restart</u> as an emergent developer.
             </h1>            
         </div>
@@ -88,26 +89,26 @@
             <h4 class="pb-3">Skills</h4>
             <section class="container row">
                 <span class="col-lg-1 mt-1">Motivation:</span>
-                <div class="col rounded-pill mt-1 ml-4 text-right" style="width:100%;background: -webkit-linear-gradient(45deg, #FF975E, #FCDA2B); color:#15324f; font-size: 0.7rem; max-width:100%">
+                <div class="col skillsgrad rounded-pill mt-1 ml-4 text-right" style="max-width:100%">
                     <span class="align-middle pt-1">100%</span>
                 </div>
             </section>   
             <section class="container row mt-2">
                 <span class="col-lg-1 mt-1">HTML:</span>
-                <div class="col rounded-pill mt-1 ml-4 text-right" style="background-color:#fff; color:#15324f; font-size: 0.7rem; max-width:20%">
-                    <span class="align-middle pt-1">20%</span>
+                <div class="col skills1 rounded-pill mt-1 ml-4 text-right" style="max-width:15%">
+                    <span class="align-middle pt-1">15%</span>
                 </div>
             </section>    
             <section class="container row mt-2">
                 <span class="col-lg-1 mt-1">Python:</span>
-                <div class="col rounded-pill mt-1 ml-4 text-right" style="background-color:#fff; color:#15324f; font-size: 0.7rem; max-width:15%">
-                    <span class="align-middle pt-1">15%</span>
+                <div class="col skills2 rounded-pill mt-1 ml-4 text-right" style="max-width:10%">
+                    <span class="align-middle pt-1">10%</span>
                 </div>
                 
             </section>    
             <section class="container row mt-2">
                 <span class="col-lg-1 mt-1">C:</span>
-                <div class="col rounded-pill mt-1 ml-4 text-right" style="background-color:#fff; color:#15324f; font-size: 0.7rem; max-width:5%">
+                <div class="col skills3 rounded-pill mt-1 ml-4 text-right" style="max-width:5%">
                     <span class="align-middle pt-1">5%</span>
                 </div>
                 
@@ -121,7 +122,7 @@
                 <div class="col-sm pr-5 pt-3">
                     <h4>Courses:</h4>
                     <ul class="list-group">
-                        <li class="list-group-item">
+                        <li class="list-group-item" style="border-bottom: 3px solid #34465e;">
                             <div class="row align-items-center">
                                 <div class="col-10">
                                     <h5>HarvardX CS50's Introduction to Computer Science</h5>
@@ -143,13 +144,19 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item">
+                        <li class="list-group-item" style="border-bottom: 3px solid #34465e;">
                             <div class="row align-items-center">
                                 <div class="col-10">
                                     <h5>HarvardX CS50's Web Programming with Python and JavaScript</h5>
-                                    <a data-toggle="collapse" href="#collapse1" role="button">More...</a>
-                                    <div class="card-body collapse" id="collapse1">
-                                        <small class="text-muted">Basics on HTML, CSS, Git, Github, Python & JavaScript</small>
+                                    <div class="trans">
+                                        <a data-toggle="collapse" href="#collapse1" role="button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up" viewBox="0 0 16 16">
+                                                <path d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659l4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="collapse" id="collapse1">
+                                        <small class="text-muted">Basics on HTML, CSS, Sass, Git, Github, Python & JavaScript</small>
                                     </div>
                                     <br>
                                     <small>
@@ -171,7 +178,6 @@
                             <div class="row align-items-center">
                                 <div class="col-10">
                                     <h5>The Odin Project - Foundations</h5>
-                                    
                                     <small class="text-muted">Basics of HTML, CSS, Git, Github ...</small>
                                     <br>
                                     <small>
@@ -195,7 +201,7 @@
                 <div class="col-sm pr-5 pt-3">
                     <h4>Projects:</h4>
                     <ul class="list-group">
-                        <li class="list-group-item">None</li>
+                        <li class="list-group-item">My Github Page =)</li>
                     </ul>
                 </div>
             </div>

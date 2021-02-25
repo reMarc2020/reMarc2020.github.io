@@ -31,6 +31,7 @@ body {
 
 .list-group-item:hover {
     background-color: #274768;
+    border-radius: 0%;
 }
 
 
@@ -81,8 +82,59 @@ svg[width="32"]{
     background: -webkit-linear-gradient(45deg, #FF975E, #FCDA2B);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    line-height: 6rem; 
+    line-height: 5rem; 
   }
+
+ /* Transform idea inspired by Rachel Cope @ https://thoughtbot.com/blog/transitions-and-transforms & Chris Spittles @ https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load*/ 
+@keyframes skillSlide {
+    0% {
+        transform-origin: left;
+        transform: scaleX(0);
+        opacity: 0;
+    }
+    100% {
+        transform-origin: left;
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+
+.skillsgrad {
+    width:100%;
+    background: -webkit-linear-gradient(45deg, #FF975E, #FCDA2B); 
+    color:#15324f; 
+    font-size: 0.7rem; 
+    animation: 0.5s ease-out 0s 1 skillSlide;;
+}
+
+.skills1, .skills2, .skills3 {
+    background-color:#fff; 
+    color:#15324f; 
+    font-size: 0.7rem; 
+}
+
+.skills1 {
+    animation: 0.7s ease-out 0s 1 skillSlide;;
+}
+
+.skills2 {
+    animation: 0.9s ease-out 0s 1 skillSlide;;
+}
+
+.skills3 {
+    animation: 1.1s ease-out 0s 1 skillSlide;;
+}
+
+.trans {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.5s;
+}
+
+.trans:hover {
+    transform: rotate(0.25turn);
+}
 
 
 /* Speech bubble inspired by https://projects.verou.me/bubbly/ */
