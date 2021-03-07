@@ -3,6 +3,8 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="icon" href="images/remarc-favicon.svg" sizes="any" type="image/svg+xml">
+
         <!-- include Bootstrap v4.6 -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -11,12 +13,18 @@
         <!-- include Bootstrap Icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 
-        <!-- include web font "Source Code Pro" by Paul D. Hunt -->
+        <!-- include web font "Source Code Pro" by Paul D. Hunt 
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,600;1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,600;1,300&display=swap" rel="stylesheet">-->
+
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,500;0,900;1,300&display=swap" rel="stylesheet">
+
 
         <!-- include own CSS-Variations -->
         <link rel="stylesheet" href="style.css">
+
+
 
         <title>reMarc on Github</title>
     </head>
@@ -27,19 +35,22 @@
             <span class="navbar-brand"><h3>reMarc</h3></span>
             <div class="mt-n4 collapse navbar-collapse">
                 <div class="speech-bubble text-center">
-                    <span class="p-2 pt-3 align-middle">hello, world!</span>
+                    <span class="px-1">hello, world!</span>
                 </div>
             </div>
+            <!-- Nightmode toggle (for function, see bottom)-->   
+            <a class="btn btn-primary font-weight-bold btn-sm" id="nightmode"><i class="bi bi-moon"> Darkmode</i></a>
+            
         </nav>
         <!-- Funky headline-->
 
-        <div class="container mt-5" style="padding-bottom:1.5rem;">
-            <h1 class="display-3 hgrad">
+        <div class="container mt-5 text-center" style="padding-bottom:1.5rem;">
+            <p class="display-1 hgrad">
                 Hi.
-            </h1>
-            <h1 class="display-4 hgrad">
-                I'm <span class="underh2">Marc</span> and this is my <u class="underh2">restart</u> as an emergent developer.
-            </h1>            
+            </p>
+            <p class="display-4 hgrad">
+                I'm Marc and this is my restart as an emergent developer.
+            </p>            
         </div>
 
         <!-- Funky headline #2
@@ -53,7 +64,9 @@
         </div> -->
         
         <!-- Heading -->
-        <div class="container mt-5">
+
+        
+        <div class="container mt-5 lead list-group-item  p-4" id="intro">
             This page is used to monitor my progress.
             <br>
             Right now, I've started by using Bootstrap 4 for a design framework.
@@ -61,55 +74,40 @@
             Building on that foundation my plan is to steadily alter and improve the page while I hopefuly learn more & more.
         </div>
 
-        <!-- Skills #1 
-        <div class="container mt-5">
-            <h4 class="pb-3">Skills</h4>
-            <section class="container row ml-2">
-                <span class="col-1">HTML:</span>
-                <div class="col">
-                    <button class="btn btn-skill rounded-pill mx-1 px-4"></button>
-                    <button class="btn btn-unskill rounded-pill mx-1 px-4"></button>
-                    <button class="btn btn-unskill rounded-pill mx-1 px-4"></button>
-                    <button class="btn btn-unskill rounded-pill mx-1 px-4"></button>
-                </div>
-            </section>    
-            <section class="container row ml-2">
-                <span class="col-1">Python:</span>
-                <div class="col">
-                    <button class="btn btn-skill rounded-pill mx-1 px-4"></button>
-                    <button class="btn btn-unskill rounded-pill mx-1 px-4"></button>
-                    <button class="btn btn-unskill rounded-pill mx-1 px-4"></button>
-                    <button class="btn btn-unskill rounded-pill mx-1 px-4"></button>
-                </div>
-            </section>    
-        </div>-->
 
-        <!-- Skills #2 -->
+        <!-- Skills -->
         <div class="container mt-5">
-            <h4 class="pb-3">Skills</h4>
+            <h4 class="pb-3 h-code">Skills</h4>
             <section class="container row">
-                <span class="col-lg-1 mt-1">Motivation:</span>
-                <div class="col skillsgrad rounded-pill mt-1 ml-4 text-right" style="max-width:100%">
-                    <span class="align-middle pt-1">100%</span>
+                <span class="col-lg-1 mt-2 font-weight-bold">Motivation:</span>
+                <div class="col skillsgrad rounded-pill mt-1 ml-4 text-right pt-1" style="max-width:100%">
+                    100% <i class="bi bi-emoji-wink"></i>
                 </div>
             </section>   
             <section class="container row mt-2">
-                <span class="col-lg-1 mt-1">HTML:</span>
-                <div class="col skills1 rounded-pill mt-1 ml-4 text-right" style="max-width:15%">
-                    <span class="align-middle pt-1">15%</span>
+                <span class="col-lg-1 mt-2 font-weight-bold">HTML/CSS:</span>
+                <div class="col skills1 rounded-pill mt-1 ml-4 text-right pt-1" style="max-width:15%">
+                    15%
                 </div>
             </section>    
             <section class="container row mt-2">
-                <span class="col-lg-1 mt-1">Python:</span>
-                <div class="col skills2 rounded-pill mt-1 ml-4 text-right" style="max-width:10%">
-                    <span class="align-middle pt-1">10%</span>
+                <span class="col-lg-1 mt-2 font-weight-bold">Python:</span>
+                <div class="col skills2 rounded-pill mt-1 ml-4 text-right pt-1" style="max-width:10%">
+                    10%
                 </div>
                 
             </section>    
             <section class="container row mt-2">
-                <span class="col-lg-1 mt-1">C:</span>
-                <div class="col skills3 rounded-pill mt-1 ml-4 text-right" style="max-width:5%">
-                    <span class="align-middle pt-1">5%</span>
+                <span class="col-lg-1 mt-2 font-weight-bold">JavaScript:</span>
+                <div class="col skills3 rounded-pill mt-1 ml-4 text-right pt-1" style="max-width:5%">
+                    5%
+                </div>
+                
+            </section>   
+            <section class="container row mt-2">
+                <span class="col-lg-1 mt-2 font-weight-bold">C:</span>
+                <div class="col skills3 rounded-pill mt-1 ml-4 text-right pt-1" style="max-width:5%">
+                    5%
                 </div>
                 
             </section>   
@@ -117,76 +115,79 @@
 
 
         <!-- Main content -->
+        
         <div class="container mt-5 pt-2">
+
             <div class="d-flex flex-wrap row">
+
+                <!-- Courses -->
                 <div class="col-sm pr-5 pt-3">
-                    <h4>Courses:</h4>
+                    <h4 class="pb-3 h-code">Courses</h4>
                     <ul class="list-group">
-                        <li class="list-group-item" style="border-bottom: 3px solid #34465e;">
+                        <li class="list-group-item">
                             <div class="row align-items-center">
                                 <div class="col-10">
-                                    <h5>HarvardX CS50's Introduction to Computer Science</h5>
-                                    <small class="text-muted">Basics of C, Python, HTML & CSS, Flask & Jinja</small>
-                                    <br>
-                                    <small>
-                                        <a href="https://cs50.harvard.edu/x/2021/">Visit Course page</a>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-                                            <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
-                                            <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
-                                        </svg>
-                                    </small>
+                                    <h6>HarvardX CS50</h6>
+                                    <h4 class="items">
+                                        Introduction to Computer Science
+                                    </h4>
+    
+                                    <p class="text-muted">
+                                        "An introduction to the intellectual enterprises of computer science and the art of programming."
+                                    </p>           
+                                    <p>
+                                        In my final project I developed a shopping-list-web-app with Python, Flask, JSON and SQL. (Link coming soon)
+                                    </p>                           
+                                    <p>
+                                        <button class="btn btn-language btn-sm rounded-pill"> C </button>
+                                        <button class="btn btn-language btn-sm rounded-pill">Python</button>
+                                        <button class="btn btn-language btn-sm rounded-pill">Flask</button>
+                                        <button class="btn btn-language btn-sm rounded-pill">SQL</button>
+                                        <button class="btn btn-language btn-sm rounded-pill">HTML/CSS</button>                                        
+
+                                    </p>
                                 </div>
                                 <div class="col-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
                                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                                         <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
-                                      </svg>
+                                    </svg>
                                 </div>
                             </div>
-                        </li>
-                        <li class="list-group-item" style="border-bottom: 3px solid #34465e;">
-                            <div class="row align-items-center">
-                                <div class="col-10">
-                                    <h5>HarvardX CS50's Web Programming with Python and JavaScript</h5>
-                                    <div class="trans">
-                                        <a data-toggle="collapse" href="#collapse1" role="button">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up" viewBox="0 0 16 16">
-                                                <path d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659l4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z"/>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <div class="collapse" id="collapse1">
-                                        <small class="text-muted">Basics on HTML, CSS, Sass, Git, Github, Python & JavaScript</small>
-                                    </div>
-                                    <br>
-                                    <small>
-                                        <a href="https://cs50.harvard.edu/web/2020/">Visit Course page</a>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-                                            <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
-                                            <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
-                                        </svg>
-                                    </small>
-                                </div>
-                                <div class="col-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                      </svg>
-                                </div>
+                            <div class="row float-right my-2 mr-1">
+                                <span class="mt-1 mr-2"> 
+                                        
+                                    <a class="btn btn-primary btn-sm" href="https://cs50.harvard.edu/x/2021/">
+                                        <i class="bi bi-arrow-right-circle-fill"></i> 
+                                        Visit course
+                                    </a>
+                                                                
+                                </span>
                             </div>
                         </li>
                         <li class="list-group-item">
                             <div class="row align-items-center">
                                 <div class="col-10">
-                                    <h5>The Odin Project - Foundations</h5>
-                                    <small class="text-muted">Basics of HTML, CSS, Git, Github ...</small>
-                                    <br>
-                                    <small>
-                                        <a href="https://www.theodinproject.com/">Visit Course page</a>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-                                            <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
-                                            <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
-                                        </svg>
-                                    </small>
+                                    <h6>HarvardX CS50</h6>
+                                    <h4 class="items">
+                                        Web Programming with Python and JavaScript
+                                    </h4>
+                                    
+                                    <p class="text-muted">
+                                        "This course picks up where CS50 leaves off, diving more deeply into the design and implementation of web apps with Python, JavaScript, and SQL using frameworks like Flask, Django, and Bootstrap."
+                                    </p>
+                                         
+                                    <p>
+                                        <button class="btn btn-language btn-sm rounded-pill">Python</button>
+                                        <button class="btn btn-language btn-sm rounded-pill">Django</button>
+                                        <button class="btn btn-language btn-sm rounded-pill">APIs</button>
+                                        <button class="btn btn-language btn-sm rounded-pill">Git</button>
+                                        <button class="btn btn-language btn-sm rounded-pill">JavaScript</button>
+                                        <button class="btn btn-language btn-sm rounded-pill">HTML/CSS</button>
+                                        <button class="btn btn-platform btn-sm rounded-pill">Github</button>                                    
+
+                                    </p>                                                                  
+                                    
                                 </div>
                                 <div class="col-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
@@ -194,27 +195,171 @@
                                       </svg>
                                 </div>
                             </div>
+                            <div class="row float-right my-2 mr-1">
+                                <span class="mt-1 mr-2"> 
+                                        
+                                    <a class="btn btn-primary btn-sm" href="https://cs50.harvard.edu/web/2020/">
+                                        <i class="bi bi-arrow-right-circle-fill"></i> 
+                                        Visit course
+                                    </a>
+                                                                
+                                </span>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row align-items-center">
+                                <div class="col-10">
+                                    <h6>The Odin Project</h6>
+                                    <h4 class="items">Foundations</h4>
+                                    <p>
+                                        "A hands-on introduction to all of the essential tools you'll need to build real, working websites. You'll learn what web developers actually do – the foundations you'll need for later courses."
+                                    </p>
+                                    <p>                                        
+                                        <button class="btn btn-language btn-sm rounded-pill">Git</button>
+                                        <button class="btn btn-language btn-sm rounded-pill">JavaScript</button>
+                                        <button class="btn btn-language btn-sm rounded-pill">HTML/CSS</button>                                        
+
+                                    </p>    
+                                    
+                                </div>
+                                <div class="col-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                      </svg>
+                                </div>
+                            </div>
+                            <div class="row float-right my-2 mr-1">
+                                <span class="mt-1 mr-2"> 
+                                        
+                                    <a class="btn btn-primary btn-sm" href="https://www.theodinproject.com">
+                                        <i class="bi bi-arrow-right-circle-fill"></i> 
+                                        Visit course
+                                    </a>
+                                                                
+                                </span>
+                            </div>
                         </li>
                     </ul>
                 </div>
 
-                <div class="col-sm pr-5 pt-3">
-                    <h4>Projects:</h4>
+
+
+
+                
+                <!-- Projects -->
+                <div class="col-lg pr-5 pt-3">
+                    <h4 class="pb-3 h-code">Projects</h4>
                     <ul class="list-group">
-                        <li class="list-group-item">My Github Page =)</li>
+                        <li class="list-group-item">
+                            <div class="row  align-items-center">
+                                <div class="col-10">
+                                    <h6>Website</h6>
+                                    <h4 class="items">My Github Page =)</h4>
+                                    <p>
+                                        Presenting the progress on my way to become a developer.
+                                    </p>
+                                    <p>
+                                        <button class="btn btn-language btn-sm rounded-pill">HTML/CSS</button>
+                                        <button class="btn btn-platform btn-sm rounded-pill">Github</button>
+                                    </p>
+                                    
+                                </div>
+                                <div class="col-2">
+                                    ongoing
+                                </div>
+                            </div>
+                            <div class="row float-right my-2 mr-1">
+                                <span>                                        
+                                    <a class="btn btn-primary btn-sm"href="/">
+                                        <i class="bi bi-arrow-right-circle-fill"></i>
+                                        Visit page
+                                    </a>                                                                
+                                </span>
+                            </div>
+                        </li> 
+                        <li class="list-group-item">
+                            <div class="row align-items-center">                                
+                                <div class="col-10">
+                                    <h6>Web-App</h6>
+                                    <h4 class="items">stonks-rm</h4>
+                                    <!--<p class="text-muted">
+                                        Logo:
+                                        <img class="img-gray rounded p-1 mb-2" src="images/stonks-logo.gif" style="width:10rem; height:3rem">
+                                    </p>-->
+                                    <p class="text-muted">
+                                        A small web-app to look at stock performance and additional info.                                        
+                                    </p>
+                                    
+                                    <p>
+                                        <button class="btn btn-language btn-sm rounded-pill">Python</button>
+                                        <button class="btn btn-language btn-sm rounded-pill">Flask</button>
+                                        <button class="btn btn-language btn-sm rounded-pill">HTML/CSS</button>
+                                        <button class="btn btn-language btn-sm rounded-pill">Javascript</button>                                        
+                                        <button class="btn btn-platform btn-sm rounded-pill">Github</button>
+                                        <button class="btn btn-platform btn-sm rounded-pill">Heroku</button>
+                                    </p>
+                                                                        
+                                </div>
+                                <div class="col-2">
+                                    ongoing
+                                </div>
+                            </div>
+                            <div class="row float-right my-2 mr-1">
+                                
+                                <span>  
+                                    <a class="btn btn-primary btn-sm" href="/">
+                                        <i class="bi bi-github"></i>
+                                        Visit repository
+                                    </a>                                          
+                                    <a class="btn btn-primary btn-sm" href="/">
+                                        <i class="bi bi-arrow-right-circle-fill"></i> 
+                                        Visit app
+                                    </a>                                                                
+                                </span>                                
+                            </div>        
+                                            
+                        </li>                        
+                        <li class="list-group-item">
+                            More to come...
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-
+        
         <!-- Footer -->
         <footer class="footer">
-            <div class="container text-center text-muted pt-4 mb-n5">
-                Hi, i'm a footer!
+            <div class="container text-center text-muted pt-4 mt-4 mb-n5">
+                Made in Hamburg by Marc.
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FF975E" fill-opacity="1" d="M0,64L34.3,106.7C68.6,149,137,235,206,224C274.3,213,343,107,411,80C480,53,549,107,617,154.7C685.7,203,754,245,823,234.7C891.4,224,960,160,1029,144C1097.1,128,1166,160,1234,160C1302.9,160,1371,128,1406,112L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
         </footer>
     </div>
+
+
+        <!-- Nightmode function -->
+        <script>
+            $(document).ready(function(){
+                var on = 0;
+                $("#nightmode").click(function(){
+                    $("body").toggleClass("night-body");
+                    $(".btn-primary").toggleClass("btn-night");
+                    $(".btn-primary:hover").toggleClass("btn-night:hover");
+                    $(".list-group-item, #intro").toggleClass("list-night");
+                    $(".skills1, .skills2, .skills3").toggleClass("skills-night");
+                    $(".text-muted").toggleClass("muted-night");
+                    if (on == 0) {
+                        $(".bi-moon").replaceWith("<i class='bi bi-sun'> Lightmode</i>");
+                        on++;
+                    } else {
+                        $(".bi-sun").replaceWith("<i class='bi bi-moon'> Darkmode</i>");
+                        on--;
+                    }
+                });
+            })
+        </script>
+
     </body>
+
 
 </html>
