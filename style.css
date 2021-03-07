@@ -130,6 +130,16 @@ svg[width="32"]{
 }
 
 
+.ani {
+    transition: all 2s ease-in-out;
+}
+
+.ani:hover {
+    transform:rotate(1turn);
+}
+
+
+
 .hgrad {
     font-family: 'Source Code Pro', monospace;
     font-weight: 900;
@@ -138,6 +148,14 @@ svg[width="32"]{
     -webkit-text-fill-color: transparent;
     line-height: 5rem; 
   }
+.hgrad2 {
+font-family: 'Source Code Pro', monospace;
+font-weight: 900;
+background: -webkit-linear-gradient(45deg, #FF975E, #FCDA2B);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+line-height: 4rem; 
+}
 
  /* Transform idea inspired by Rachel Cope @ https://thoughtbot.com/blog/transitions-and-transforms & Chris Spittles @ https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load*/ 
 @keyframes skillSlide {
