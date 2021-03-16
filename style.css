@@ -5,6 +5,22 @@ body {
     min-height: 100%;
 }
 
+p {
+    line-height: 1.8rem;
+}
+
+.navbar-brand {
+    color: #0c243d !important;
+}
+
+.brand-night {
+    color: #fff !important;
+}
+
+.mt-wide {
+    margin-top:7rem;
+}
+
 .night-body {
     background-color: #0c243d !important;
     color: #fff !important;
@@ -147,14 +163,15 @@ svg[width="32"]{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 5rem; 
-  }
+}
+
 .hgrad2 {
-font-family: 'Source Code Pro', monospace;
-font-weight: 900;
-background: -webkit-linear-gradient(45deg, #FF975E, #FCDA2B);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-line-height: 4rem; 
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+    background: -webkit-linear-gradient(45deg, #FF975E, #FCDA2B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 4rem; 
 }
 
  /* Transform idea inspired by Rachel Cope @ https://thoughtbot.com/blog/transitions-and-transforms & Chris Spittles @ https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load*/ 
@@ -207,6 +224,9 @@ line-height: 4rem;
     animation: 1.1s ease-out 0s 1 skillSlide;;
 }
 
+.text-stonk {
+    color: #1DB;
+}
 
 /* Speech bubble inspired by https://projects.verou.me/bubbly/ */
 .speech-bubble {

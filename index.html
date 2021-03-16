@@ -32,7 +32,7 @@
         <div id="page-container">
         <!-- Navigation bar -->
         <nav class="navbar navbar-expand-sm">
-            <span class="navbar-brand"><h3>reMarc</h3></span>
+            <a href="index.html" class="navbar-brand"><h3>reMarc</h3></a>
             <div class="mt-n4 collapse navbar-collapse">
                 <div class="speech-bubble text-center">
                     <span class="px-1">hello, world!</span>
@@ -53,20 +53,10 @@
             </p>            
         </div>
 
-        <!-- Funky headline #2
-        <div class="container mt-5" style="padding-bottom:2.5rem;">
-            <h1 class="display-1">
-                Hi.
-            </h1>
-            <h1 class="display-3">
-                I'm <u class="underh">Marc</u> and this is my <u class="underh">restart</u> as an emergent developer.
-            </h1>            
-        </div> -->
         
-        <!-- Heading -->
-
+        <!-- Intro -->
         
-        <div class="container mt-5 lead list-group-item  p-4" id="intro">
+        <div class="container mt-5 lead list-group-item p-4">
             This page is used to monitor my progress.
             <br>
             Right now, I've started by using Bootstrap 4 for a design framework.
@@ -328,11 +318,11 @@
                             <div class="row float-right my-2 mr-1">
                                 
                                 <span>  
-                                    <a class="btn btn-primary btn-sm" href="/">
-                                        <i class="bi bi-github"></i>
-                                        Visit repository
+                                    <a class="btn btn-primary btn-sm" href="stonks.html">
+                                        <i class="bi bi-card-text"></i>
+                                        Project page
                                     </a>                                          
-                                    <a class="btn btn-primary btn-sm" href="/">
+                                    <a class="btn btn-primary btn-sm" href="https://stonks-rm.herokuapp.com">
                                         <i class="bi bi-arrow-right-circle-fill"></i> 
                                         Visit app
                                     </a>                                                                
@@ -359,14 +349,37 @@
 
 
         <!-- Nightmode function -->
-        <script>
+        <script>           
+            $(document).ready(function(){
+                if (localStorage.getItem('light') == undefined) {
+                    localStorage.setItem('light', 'true');
+                }
+
+                if (localStorage.getItem('light') == 'false' ) {
+                    $("body").toggleClass("night-body");
+                        $(".btn-primary").toggleClass("btn-night");
+                        $(".btn-primary:hover").toggleClass("btn-night:hover");
+                        $(".list-group-item").toggleClass("list-night");
+                        $(".skills1, .skills2, .skills3").toggleClass("skills-night");
+                        $(".text-muted").toggleClass("muted-night");
+                        if (on == 0) {
+                            $(".bi-moon").replaceWith("<i class='bi bi-sun'> Lightmode</i>");
+                            on++;
+                        } else {
+                            $(".bi-sun").replaceWith("<i class='bi bi-moon'> Darkmode</i>");
+                            on--;
+                        };                    
+                }
+            });
+        </script>
+        <script> 
             $(document).ready(function(){
                 var on = 0;
                 $("#nightmode").click(function(){
                     $("body").toggleClass("night-body");
                     $(".btn-primary").toggleClass("btn-night");
                     $(".btn-primary:hover").toggleClass("btn-night:hover");
-                    $(".list-group-item, #intro").toggleClass("list-night");
+                    $(".list-group-item").toggleClass("list-night");
                     $(".skills1, .skills2, .skills3").toggleClass("skills-night");
                     $(".text-muted").toggleClass("muted-night");
                     if (on == 0) {
@@ -375,7 +388,13 @@
                     } else {
                         $(".bi-sun").replaceWith("<i class='bi bi-moon'> Darkmode</i>");
                         on--;
+                    };
+                    if (localStorage.getItem('light') == 'true' ) { 
+                        localStorage.setItem('light', 'false');
+                    } else {
+                        localStorage.setItem('light', 'true');
                     }
+
                 });
             })
         </script>

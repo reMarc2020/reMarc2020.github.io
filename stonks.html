@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="images/remarc-favicon.svg" sizes="any" type="image/svg+xml">
+
+        <!-- include Bootstrap v4.6 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        
+        <!-- include Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+        <!-- include web font "Source Code Pro" by Paul D. Hunt 
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,600;1,300&display=swap" rel="stylesheet">-->
+
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,500;0,900;1,300&display=swap" rel="stylesheet">
+
+
+        <!-- include own CSS-Variations -->
+        <link rel="stylesheet" href="style.css">
+
+
+
+        <title>reMarc on Github</title>
+    </head>
+    <body>
+    <div id="page-container">
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-sm">
+            <a href="index.html" class="navbar-brand"><h3>reMarc</h3></a>
+            <div class="mt-n4 collapse navbar-collapse">
+                <div class="speech-bubble text-center">
+                    <span class="px-1">hello, world!</span>
+                </div>
+            </div>
+            <!-- Nightmode toggle (for function, see bottom)-->   
+            <a class="btn btn-primary font-weight-bold btn-sm" id="nightmode"><i class="bi bi-moon"> Darkmode</i></a>
+            
+        </nav>
+        <!-- Funky headline-->
+
+        <div class="container mt-5 text-center">
+            
+            <p class="text-muted font-weight-bold h5">PROJECT</p>
+            <span class="text-muted font-weight-bold h6">(in development)</span>
+                                
+            <!--<p class="display-1 hgrad">
+                stonks-rm
+            </p>-->
+            <br>
+            <br>
+            <br>
+            <img class="img-fuid" src="stonks/stonks-logo_r.gif" width="60%" height="60%">
+            <div class="container">
+                <div class="row justify-content-center align-items-center mt-4">
+                    <a href="https://stonks-rm.herokuapp.com" target="_blank" class="btn btn btn-primary">
+                        <i class="bi bi-play-circle-fill"></i>
+                        &nbsp;
+                        Try it out
+                    </a>
+                    <span class="mx-4" style="height:30px; border-left:1px solid #ccc"> </span>
+                    
+                    <a href="" target="_blank" class="btn btn btn-outline-secondary disabled">
+                        <i class="bi bi-github"></i>
+                        &nbsp;
+                        View on Github
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <!-- Intro -->
+        
+        <div class="container mt-5 lead list-group-item p-4 text-center">
+            <p>
+            As my first project aside from my courses' homework, I decided to develop a <strong>finance web-app</strong>.
+            <br>
+            Being active on the stock market myself and using various fintech websites and apps,
+            
+            it was appealing to try to design a (basic) service for checking stocks myself.
+            
+            As an homage to a well-known sub-reddit I named it <strong>stonks</strong> (= stocks).
+            </p>
+            <p class="pt-3"> 
+                <button class="btn btn-language btn-sm rounded-pill">Python</button>
+                <button class="btn btn-language btn-sm rounded-pill">Flask</button>
+                <button class="btn btn-language btn-sm rounded-pill">HTML/CSS</button>
+                <button class="btn btn-language btn-sm rounded-pill">Javascript</button>                                        
+                <button class="btn btn-platform btn-sm rounded-pill">Github</button>
+                <button class="btn btn-platform btn-sm rounded-pill">Heroku</button>
+            </p>
+        </div>
+
+        
+
+        <!-- Main content -->
+
+
+        <div class="container mt-wide"> 
+            <div class="row">
+                <div class="col-md">
+                    <img class="img-fluid" id="searchfocus" src="stonks/search-focus.png">
+                </div>
+                <div class="col-md-8 px-4">
+                    <h6>Idea</h6>
+                    <h4>
+                        Stock Screener
+                    </h4>
+                    <div class="pt-4">                        
+                        <p>
+                            This web-app aims to make it as easy as possible to search for stocks and screen them based on performance indicators, comparable stats in their peer-group and additional information like current news.
+                        </p>     
+                        <p>
+                            A constraint I found early in development was that I needed to limit the app to NYSE-listed US-stocks - I would have preferred to a t least include european stocks as well, but the accessible APIs I found are focused on the US-market.
+                        </p>                   
+                    </div>
+                </div>
+                
+            </div>
+                
+        </div>
+        
+
+        <div class="container mt-wide"> 
+            <div class="row">
+                <div class="col-md-7 px-4">
+                    <h6>Goal</h6>
+                    <h4>
+                        Responsiveness
+                    </h4>
+                    <p class="pt-4">
+                        Optimized usability on mobile as well as desktop was important for me. Working with financial data can easily be overwhelming.
+                        Especially on small screens - hence I strived to create an equal user experience for users on all device-sizes.
+                    </p>
+                    <p>
+                        <i>Bootstrap</i> helped a lot by offering responsive breakpoints, that i utilized to rearrange data-boxes in rows/columns, change font-sizes and leaving out less important elements like a company's logo when on mobile.
+                    </p>
+                </div>
+                <div class="col-md-5 p-4">
+                    <figure class="figure"></figure>
+                        <img class="img-fluid rounded-lg shadow" style="width:80%;" src="stonks/start-mobile_c.png">
+                        <figcaption class="figure-caption pt-2 mb-4">Mobile start screen</figcaption>
+                    </figure>
+                </div>
+            </div>
+            
+            <div class="row">    
+                <div class="col-md-6 px-4 mt-n4">
+                    <p>
+                        On top of optimizing the device-reponsiveness I wanted to implement a simple darkmode to enhance the user experience for different situations and preferences. For this, I created a <i>JavaScript</i>-function that toggles between dark- & lightmode-CSS-attributes.
+                    </p>
+                </div>
+            </div>
+            <div class="row">  
+                <div class="col-md-6 px-4">  
+                    <figure class="figure"></figure>
+                        <img class="img-fluid rounded-lg shadow"  src="stonks/result-example-desktop_Light.png">
+                        <figcaption class="figure-caption pt-2 mb-4">Stock result on desktop-lightmode</figcaption>
+                    </figure>
+                </div> 
+                <div class="col-md-6 px-4">  
+                    <figure class="figure"></figure>
+                        <img class="img-fluid rounded-lg shadow"  src="stonks/result-example-desktop_Dark.png">
+                        <figcaption class="figure-caption pt-2 mb-4">Stock result on desktop-darkmode</figcaption>
+                    </figure>
+                </div> 
+                                                
+            </div>
+
+        </div>
+            
+        <div class="container list-group-item mt-wide"> 
+            <div class="row">
+                <div class="col px-4">
+                    <h6>Challenges</h6>
+                    <h4>
+                        Finding my current limitations
+                    </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-4">                        
+                    <p>
+                        Beeing still very early on the way to become a developer, I found various constraints and problems, that I hope to solve later on.
+                    </p>    
+                        <div class="row mt-4">
+                            <div class="col-md-2 mx-4 text-center display-2">      
+                                <i class="bi bi-speedometer"></i>
+                            </div>   
+                            <div class="col">
+                                <strong>Speed:</strong>
+                                <p>
+                                If you tried the app, you'll have noticed: the collection of the data for a selected stock and processing it in the backend takes quite long. 
+                                I'm not sure if it is simply bad coding on my side or if the limitation lies in the API-responses. But I'm going to find out.
+                                </p>
+                            </div>
+                        </div>
+                    
+                        <div class="row mt-4">
+                           <div class="col">
+                                
+                                <strong>Bootstrap nuances:</strong>
+                                <p>
+                                I really enjoyed building the frontend with <i>Bootstrap</i> - although by striving to create a unqiue look & feel for stonks, I had to alter more and more elements.
+                                My solution was creating an own stylesheet and overwrite the <i>Bootstrap</i>-styles. I know that's not the elegant and recommended way - 
+                                and I want to deepen my understanding of Bootstrap and CSS by utilizing <i>Sass</i>-files in the future.
+                                </p>
+                            </div>
+                            <div class="col-md-2 mx-4 text-center display-2">      
+                                <i class="bi bi-code-slash"></i>
+                            </div>     
+                        </div>      
+                </div>  
+            </div>   
+
+            <div class="row">   
+                <div class="col p-4  text-center ">                 
+                    more to come ...
+                </div>
+            </div>                  
+                
+        </div>
+
+        <!--<div class="container mt-wide"> 
+            <div class="row">
+                <div class="col-md-8 px-4">
+                    <h6>Goal</h6>
+                    <h4>
+                        Responsiveness
+                    </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 p-4">                        
+                    <p>
+                        Optimized usability on mobile as well as desktop was important for me. Working with financial data can easily be overwhelming.
+                        Especially on small screens - hence i strived to create an equal user experience for users on all device-sizes.
+                        Bootstrap helped a lot by offering responsive breakpoints, that i utilized to rearrange data-boxes in rows/columns, change font-sizes and leaving out less important elements like a company's logo when on mobile.
+                    </p>
+                    
+                </div>
+                    
+                <div class="col-md-4">      
+                    
+                </div>                
+            </div>   
+            <div class="row">               
+
+
+            </div>                  
+                
+        </div>-->
+
+    </div>    
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container text-center text-muted pt-4 mt-4 mb-n3">
+                Made in Hamburg by Marc.
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FF975E" fill-opacity="1" d="M0,64L34.3,106.7C68.6,149,137,235,206,224C274.3,213,343,107,411,80C480,53,549,107,617,154.7C685.7,203,754,245,823,234.7C891.4,224,960,160,1029,144C1097.1,128,1166,160,1234,160C1302.9,160,1371,128,1406,112L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+        </footer>
+        
+
+
+        <!-- Nightmode function -->
+        <script>           
+            $(document).ready(function(){
+                if (localStorage.getItem('light') == undefined) {
+                    localStorage.setItem('light', 'true');
+                }
+
+                if (localStorage.getItem('light') == 'false' ) {
+                    $("body").toggleClass("night-body");
+                        $(".btn-primary").toggleClass("btn-night");
+                        $(".btn-primary:hover").toggleClass("btn-night:hover");
+                        $(".list-group-item").toggleClass("list-night");
+                        $(".skills1, .skills2, .skills3").toggleClass("skills-night");
+                        $(".text-muted").toggleClass("muted-night");
+                        $(".navbar-brand").toggleClass("brand-night");
+                        $(".bi-moon").replaceWith("<i class='bi bi-sun'> Lightmode</i>");
+                        $("#searchfocus").replaceWith("<img class='img-fluid' id='searchfocus' src='stonks/search-focus_dark.png'>");
+                                       
+                }
+            });
+        </script>
+        <script> 
+            $(document).ready(function(){
+                $("#nightmode").click(function(){
+                    $("body").toggleClass("night-body");
+                    $(".btn-primary").toggleClass("btn-night");
+                    $(".btn-primary:hover").toggleClass("btn-night:hover");
+                    $(".list-group-item").toggleClass("list-night");
+                    $(".skills1, .skills2, .skills3").toggleClass("skills-night");
+                    $(".text-muted").toggleClass("muted-night");
+                    $(".navbar-brand").toggleClass("brand-night");
+                    
+                    if (localStorage.getItem('light') == 'true' ) { 
+                        localStorage.setItem('light', 'false');
+                        $(".bi-moon").replaceWith("<i class='bi bi-sun'> Lightmode</i>");
+                        $("#searchfocus").replaceWith("<img class='img-fluid' id='searchfocus' src='stonks/search-focus_dark.png'>");
+                    } else {
+                        localStorage.setItem('light', 'true');
+                        $(".bi-sun").replaceWith("<i class='bi bi-moon'> Darkmode</i>");
+                        $("#searchfocus").replaceWith("<img class='img-fluid' id='searchfocus' src='stonks/search-focus.png'>");
+                    }
+
+                });
+            })
+        </script>
+
+    </body>
+
+
+</html>
