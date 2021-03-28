@@ -357,18 +357,19 @@
 
                 if (localStorage.getItem('light') == 'false' ) {
                     $("body").toggleClass("night-body");
-                        $(".btn-primary").toggleClass("btn-night");
-                        $(".btn-primary:hover").toggleClass("btn-night:hover");
-                        $(".list-group-item").toggleClass("list-night");
-                        $(".skills1, .skills2, .skills3").toggleClass("skills-night");
-                        $(".text-muted").toggleClass("muted-night");
-                        if (on == 0) {
-                            $(".bi-moon").replaceWith("<i class='bi bi-sun'> Lightmode</i>");
-                            on++;
-                        } else {
-                            $(".bi-sun").replaceWith("<i class='bi bi-moon'> Darkmode</i>");
-                            on--;
-                        };                    
+                    $(".navbar-brand").toggleClass("brand-night");
+                    $(".btn-primary").toggleClass("btn-night");
+                    $(".btn-primary:hover").toggleClass("btn-night:hover");
+                    $(".list-group-item").toggleClass("list-night");
+                    $(".skills1, .skills2, .skills3").toggleClass("skills-night");
+                    $(".text-muted").toggleClass("muted-night");
+                    if (on == 0) {
+                        $(".bi-moon").replaceWith("<i class='bi bi-sun'> Lightmode</i>");
+                        on++;
+                    } else {
+                        $(".bi-sun").replaceWith("<i class='bi bi-moon'> Darkmode</i>");
+                        on--;
+                    };                    
                 }
             });
         </script>
@@ -377,6 +378,7 @@
                 var on = 0;
                 $("#nightmode").click(function(){
                     $("body").toggleClass("night-body");
+                    $(".navbar-brand").toggleClass("brand-night");
                     $(".btn-primary").toggleClass("btn-night");
                     $(".btn-primary:hover").toggleClass("btn-night:hover");
                     $(".list-group-item").toggleClass("list-night");
