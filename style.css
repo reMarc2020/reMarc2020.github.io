@@ -58,7 +58,8 @@ h6 {
     border: none;
     border-radius: 0.75rem;
     margin-bottom: 1rem;
-    padding: 1.5rem;
+    padding: 1.5rem 3rem 2rem 2rem;    
+    line-height: 2.5rem;
 }
 
 .list-night {
