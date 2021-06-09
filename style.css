@@ -174,7 +174,7 @@ svg[width="32"]{
     font-family: 'Source Code Pro', monospace;
     font-weight: 900;
     font-size: 3.8rem;
-    hyphens: auto;
+    hyphens: manual;
     line-height: 4.20rem; 
 }
 
@@ -188,8 +188,7 @@ svg[width="32"]{
 }
 
 .footerimg {
-    width:5%;
-    height:5%;
+    width:3rem;
     margin-top:-1rem;
 }
 
