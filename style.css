@@ -38,6 +38,9 @@ h6 {
 
 .h-code {
     font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    font-style: italic;
+    color: #54c7ac;
 }
 
 .underh {
