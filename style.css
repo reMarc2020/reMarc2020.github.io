@@ -59,6 +59,13 @@ h6 {
     line-height: 2.5rem;
 }
 
+.intro {
+    background-color: #f8f9fa;
+    border: none;
+    margin-bottom: 1rem;
+    line-height: 2.5rem;
+}
+
 .list-night {
     background-color: #0e2236 !important;
 }
@@ -163,14 +170,14 @@ svg[width="32"]{
 .heading {
     font-family: 'Source Code Pro', monospace;
     font-weight: 900;
-    font-size: 3.9rem;
+    font-size: 3.8rem;
 
     line-height: 4.20rem; 
 }
 
 .headingimg {
-    width:7rem;
-    margin-top: -2rem;
+    width:6rem;
+    margin-top: -1rem;
     margin-left: -1.5rem;
     position: absolute;
     -webkit-filter: saturate(1.2);
