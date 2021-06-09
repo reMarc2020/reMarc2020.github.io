@@ -67,7 +67,6 @@ h6 {
     border: none;
     margin-bottom: 1rem;
     line-height: 2.5rem;
-    hyphens: auto;
 }
 
 .list-night {
@@ -175,7 +174,7 @@ svg[width="32"]{
     font-family: 'Source Code Pro', monospace;
     font-weight: 900;
     font-size: 3.8rem;
-
+    hyphens: auto;
     line-height: 4.20rem; 
 }
 
