@@ -33,6 +33,7 @@ hr {
 h6 {
     text-transform: uppercase;
     color: #677f9e;
+
 }
 
 .h-code {
@@ -49,14 +50,10 @@ h6 {
     border-bottom: 0.5rem solid #fff;  
 }
 
-.list-group {
-    border-radius: 0.7rem;
-}
 
 .list-group-item {
     background-color: #f8f9fa;
     border: none;
-    border-radius: 0.75rem;
     margin-bottom: 1rem;
     padding: 1.5rem 3rem 2rem 2rem;    
     line-height: 2.5rem;
@@ -133,8 +130,8 @@ svg[width="32"]{
 
 .btn-language {
     color: #fff;
-    background-color: #FF975E;
-    border: 1px solid #FF975E;
+    background-color: #54c7ac;
+    border: 1px solid #54c7ac;
     margin-bottom: 0.5rem;
 
 }
@@ -146,6 +143,12 @@ svg[width="32"]{
     margin-bottom: 0.5rem;
 }
 
+.btn-framework {
+    color: #fff;
+    background-color: #FF975E;
+    border: 1px solid #FF975E;
+    margin-bottom: 0.5rem;
+}
 
 .ani {
     transition: all 2s ease-in-out;
@@ -157,15 +160,30 @@ svg[width="32"]{
 
 
 
-.hgrad {
+.heading {
     font-family: 'Source Code Pro', monospace;
     font-weight: 900;
-    background: -webkit-linear-gradient(45deg, #FF975E, #FCDA2B);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 5rem; 
+    font-size: 3.9rem;
+
+    line-height: 4.20rem; 
 }
 
+.headingimg {
+    width:7rem;
+    margin-top: -2rem;
+    margin-left: -1.5rem;
+    position: absolute;
+    -webkit-filter: saturate(1.2);
+    filter: saturate(1.2);
+}
+
+.footerimg {
+    width:5%;
+    height:5%;
+    margin-top:-1rem;
+}
+
+/*
 .hgrad2 {
     font-family: 'Source Code Pro', monospace;
     font-weight: 900;
@@ -173,6 +191,17 @@ svg[width="32"]{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 4rem; 
+}
+*/
+
+.text-hgrad {
+    background: #54c7ac;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-darkblue {
+    color: #162c44;
 }
 
  /* Transform idea inspired by Rachel Cope @ https://thoughtbot.com/blog/transitions-and-transforms & Chris Spittles @ https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load*/ 
@@ -193,8 +222,8 @@ svg[width="32"]{
 .skillsgrad {
     width:100%;
     height: 2rem;
-    background: -webkit-linear-gradient(45deg, #FF975E, #FCDA2B); 
-    color:#0c243d; 
+    background: -webkit-linear-gradient(45deg, #FF975E, #FCDA2B, #54c7ac, #54c7ac, #54c7ac,#2b8c75);
+    color:#fff; 
     font-size: 1rem; 
     font-weight: 600;
     animation: 0.5s ease-out 0s 1 skillSlide;;
