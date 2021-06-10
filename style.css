@@ -9,10 +9,6 @@ p {
     line-height: 1.8rem;
 }
 
-.outrop {
-    line-height: 2.2rem;
-}
-
 strong {
     /*background-color: #30a78b;*/
     background-color: hsla(0, 0%, 0%, 0.15);
@@ -91,7 +87,6 @@ h6 {
     color: #fff;
     border: none;
     margin-bottom: 1rem;
-    line-height: 2.5rem;
     padding: 1.5rem 3rem 2rem 2rem;    
     border-radius: 0.5rem;
 }
