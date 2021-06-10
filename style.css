@@ -9,6 +9,22 @@ p {
     line-height: 1.8rem;
 }
 
+.outrop {
+    line-height: 2.2rem;
+}
+
+strong {
+    /*background-color: #30a78b;*/
+    background-color: hsla(0, 0%, 0%, 0.15);
+    padding-left: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.5rem;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+
+
 .navbar-brand {
     color: #0c243d !important;
 }
@@ -68,6 +84,16 @@ h6 {
     margin-bottom: 1rem;
     line-height: 2.5rem;
     padding: 2rem !important;   
+}
+
+.outro {
+    background-color: #54c7ac;
+    color: #fff;
+    border: none;
+    margin-bottom: 1rem;
+    line-height: 2.5rem;
+    padding: 1.5rem 3rem 2rem 2rem;    
+    border-radius: 0.5rem;
 }
 
 .list-night {
@@ -188,9 +214,19 @@ svg[width="32"]{
     filter: saturate(1.2);
 }
 
+.whoamiimg {
+    width:8rem;
+    max-width:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .footerimg {
     width:3rem;
     margin-top:-1rem;
+    -webkit-filter: saturate(1.2);
+    filter: saturate(1.2);
 }
 
 /*
