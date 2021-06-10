@@ -9,6 +9,10 @@ p {
     line-height: 1.8rem;
 }
 
+.outrop {
+    line-height: 2rem;
+}
+
 strong {
     /*background-color: #30a78b;*/
     background-color: hsla(0, 0%, 0%, 0.15);
