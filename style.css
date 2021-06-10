@@ -11,14 +11,15 @@ p {
 
 .outrop {
     line-height: 2rem;
+    hyphens: auto;
 }
 
 strong {
     /*background-color: #30a78b;*/
     background-color: hsla(0, 0%, 0%, 0.15);
     padding-left: 0.5rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
     padding-right: 0.5rem;
     border-radius: 1rem;
     font-weight: 600;
