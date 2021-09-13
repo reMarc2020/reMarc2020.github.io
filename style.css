@@ -96,6 +96,20 @@ h6 {
     border-radius: 0.5rem;
 }
 
+.coco {
+    background-color: #f5bf0f;
+    color: #fff;
+    border: none;
+    margin-bottom: 1rem;
+    padding: 1.5rem 3rem 2rem 2rem;    
+    border-radius: 0.5rem;
+}
+
+.coco-text {
+    color: #162c44;
+}
+
+
 .list-night {
     background-color: #0e2236 !important;
 }
@@ -137,13 +151,13 @@ svg[width="32"]{
 
 .btn-primary {
     border: 1px solid #0c243d !important;
-    background-color: #f8f9fa;
+    background-color: transparent;
     color: #0c243d;
 }
 
 .btn-night {
     border: 1px solid #f8f9fa !important;
-    background-color: #0c243d;
+    background-color: transparent;
     color: #f8f9fa;
 }
 
