@@ -266,7 +266,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container text-center text-muted pt-4 mt-4 mb-n3">
-            Made in Hamburg by Marc.
+            Made in Hamburg & Cologne by Marc.
             <img src="images/memoji.png" class="footerimg">
             <br>
             <small>Diese Website nutzt keine Cookies oder andere Methoden, um dich zu tracken.</small>
@@ -291,19 +291,14 @@
                 $(".list-group-item, .intro").toggleClass("list-night");
                 $(".skills1, .skills2, .skills3").toggleClass("skills-night");
                 $(".text-muted").toggleClass("muted-night");
-
                 $(".text-darkblue").toggleClass("text-white");
-                $("#searchfocus").replaceWith("<img class='img-fluid' id='searchfocus' src='stonks/search-focus_dark.png'>");
+                
 
                 if (on == 0) {
                     $(".bi-moon").replaceWith("<i class='bi bi-sun'> Lightmode</i>");
-                    $("#searchfocus").replaceWith("<img class='img-fluid' id='searchfocus' src='stonks/search-focus_dark.png'>");
-
                     on++;
                 } else {
                     $(".bi-sun").replaceWith("<i class='bi bi-moon'> Darkmode</i>");
-                    $("#searchfocus").replaceWith("<img class='img-fluid' id='searchfocus' src='stonks/search-focus.png'>");
-
                     on--;
                 };                    
             }
@@ -320,19 +315,13 @@
                 $(".list-group-item, .intro").toggleClass("list-night");
                 $(".skills1, .skills2, .skills3").toggleClass("skills-night");
                 $(".text-muted").toggleClass("muted-night");
-
                 $(".text-darkblue").toggleClass("text-white");
-                
 
                 if (on == 0) {
                     $(".bi-moon").replaceWith("<i class='bi bi-sun'> Lightmode</i>");
-                    $("#searchfocus").replaceWith("<img class='img-fluid' id='searchfocus' src='stonks/search-focus_dark.png'>");
-
                     on++;
                 } else {
                     $(".bi-sun").replaceWith("<i class='bi bi-moon'> Darkmode</i>");
-                    $("#searchfocus").replaceWith("<img class='img-fluid' id='searchfocus' src='stonks/search-focus.png'>");
-
                     on--;
                 };
                 if (localStorage.getItem('light') == 'true' ) { 
