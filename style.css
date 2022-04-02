@@ -23,6 +23,7 @@ strong {
     padding-right: 0.5rem;
     border-radius: 1rem;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 
