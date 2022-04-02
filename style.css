@@ -222,7 +222,7 @@ svg[width="32"]{
 .headingimg {
     width:6rem;
     margin-top: -1rem;
-    margin-left: -1.5rem;
+    /* margin-left: -2.5rem; */
     position: absolute;
     -webkit-filter: saturate(1.2);
     filter: saturate(1.2);
