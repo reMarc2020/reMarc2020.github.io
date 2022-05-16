@@ -65470,7 +65470,7 @@ return s===$?this.w=A.b([],t.s):s},
 qS(){var s=0,r=A.a5(t.z),q=this,p,o,n
 var $async$qS=A.a6(function(a,b){if(a===1)return A.a2(b,r)
 while(true)switch(s){case 0:s=2
-return A.Z($.oi().a8c("suggestions.csv"),$async$qS)
+return A.Z($.oi().a8c("csv/suggestions.csv"),$async$qS)
 case 2:p=b
 o=A.avY(A.b([p],t._m),!0,null,",",'"','"',"\r\n",!0,!0).a4R(p,t.z)
 n=A.aa(o).j("ap<1,@>")
