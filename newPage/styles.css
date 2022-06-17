@@ -442,10 +442,17 @@ strong {
 
 .button {
     border-radius: 5px;
-    background-color: #93FFD8;
-    color: #3f7a64;
+    border: 2px solid #333;
+    /* background-color: #333; */
+    color: #333;
     padding: 8px 20px;
     font-weight: 600;
+    transition: 0.2s ease-out;
+}
+
+.button:hover {
+    background-color: #333;
+    color: #fff;
 }
 
 .flex-row-end {
