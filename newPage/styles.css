@@ -22,8 +22,11 @@ nav {
 }
 
 main {
-    margin: 20px 0;
-    padding: 0;
+    /* margin: 20px 0; */
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 svg {
@@ -50,12 +53,11 @@ strong {
     font-weight: 600;
 }
 
-.green {
-    color: #d1ffa4;
-}
-
-.yellow {
-    color: #ffef93;
+.container-h1 {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    opacity: 0.5;
+    text-align: center;
 }
 
 .brand {
@@ -85,11 +87,12 @@ strong {
 }
 
 .welcome-wrapper {
+    overflow: hidden;
+
     display: flex;
     align-items: end;
     justify-content: end;
-
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
 }
 
 
@@ -109,11 +112,13 @@ strong {
     display: block;
     color: #fff;
     padding-top: 100px;
+    animation: headline-moving 10s infinite ease-in-out;
+
 }
 
 .welcome-subline {
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin: 50px 10px 100px 10px;
+
     font-size: 1.2rem;
 }
 
@@ -137,6 +142,8 @@ strong {
 
 /* e7344e */
 
+
+
 @media only screen and (max-width: 650px) {
 
     .welcome-wrapper {
@@ -145,6 +152,7 @@ strong {
         align-items: stretch;
         justify-content: stretch;
         /* margin-bottom: 50px; */
+        background-color: #93FFD8;
     }
 
     .welcome-container-right {
@@ -153,16 +161,27 @@ strong {
 
         mix-blend-mode: luminosity;
         margin-left: 0;
+        overflow: hidden;
+        position: static;
     }
 
-    .welcome-container-left {}
+    .welcome-container-left {
+        background-image: url(me_sw22sm-removebg-preview.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-blend-mode: luminosity;
+    }
 
     .welcome-headline {
         /* mix-blend-mode: multiply; */
         color: #fff;
-        margin-top: 40px;
-        margin-bottom: 120px;
+        margin-top: 70px;
+        margin-bottom: 150px;
+
+
     }
+
+
 
     .welcome-subline {
         display: none;
@@ -171,8 +190,8 @@ strong {
     }
 
     #floating-img {
+        display: none;
         position: absolute;
-        justify-self: center;
         /* top: 0; */
         /* margin-top: 70px; */
         max-width: 100%;
@@ -185,6 +204,35 @@ strong {
 
 }
 
+@media only screen and (max-width: 400px) {
+    .welcome-container-left {
+        background-image: url(me_sw22sm-removebg-preview.png);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-blend-mode: luminosity;
+    }
+
+}
+
+@keyframes headline-moving {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    33% {
+        transform: translate(-5px, -10px);
+    }
+
+    66% {
+        transform: translate(5px, 10px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        ;
+    }
+}
+
 .welcome-element {
     height: 0.4rem;
     width: 3rem;
@@ -194,9 +242,9 @@ strong {
 }
 
 .feature-container {
-    margin-bottom: 40px;
-    padding: 0 20px 50px 20px;
-    background-color: #ffef93;
+    /* margin-bottom: 40px; */
+    padding: 0 20px 80px 20px;
+    background-color: #be89ff;
     color: #151515;
 }
 
@@ -205,10 +253,19 @@ strong {
     padding: 0 20px;
 }
 
+.content {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: #333;
+}
+
 .do-container {
-    margin-bottom: 40px;
+
+    /* margin-bottom: 40px; */
     padding: 0 20px 50px 20px;
-    background-color: #d1ffa4;
+    background-color: #ff8989;
     color: #000;
     /* text-shadow: 5px 5px 20px #add683; */
 }
@@ -249,4 +306,17 @@ strong {
 #favorite {
     background-color: #F43B86;
     color: #FFF;
+}
+
+.opac {
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+#stonks-logo {
+    display: block;
+    width: 250px;
+    margin: auto;
+    filter: grayscale();
+
 }
