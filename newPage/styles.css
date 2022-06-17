@@ -473,9 +473,15 @@ details[open]>p {
 
 summary {
     font-weight: 600;
-    background-color: rgb(238, 238, 238);
+    background-color: #eee;
     padding: 5px;
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
+    transition: 0.2s ease-out;
+
+}
+
+summary:hover {
+    background-color: #e1e1e1;
 }
