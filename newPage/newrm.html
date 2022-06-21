@@ -13,24 +13,25 @@
 </head>
 
 <body>
+
     <main>
+        <nav>
+            <span class="brand">reMarc</span>
+            <div class="menu">
+                <a href="#feature-container" class="menu-item" target="_self">Projects</a>
+                <a href="www.google.com" class="menu-item" target="_self">Skills</a>
+                <a href="" class="menu-item" target="_self">About</a>
+            </div>
+        </nav>
         <div class="welcome-wrapper content">
 
             <div class="welcome-container-left">
-                <nav>
-                    <span class="brand">reMarc</span>
-                    <div class="menu">
-                        <a href="" class="menu-item">Projects</a>
-                        <a href="" class="menu-item">Skills</a>
-                        <a href="" class="menu-item">About</a>
-                    </div>
-                </nav>
+
                 <div>
                     <div class="welcome-headline">Hi, i am Marc.</div>
                     <div class="welcome-subline">An emerging software developer amplyfied by a solid business background
                     </div>
                 </div>
-
             </div>
             <div class="welcome-container-right">
                 <img id="floating-img" src="me_sw22sm-removebg-preview.png"></img>
@@ -53,8 +54,7 @@
             </div>
 
         </div>
-
-        <div class="feature-container content">
+        <div class="content" id="feature-container">
             <h1 class="container-h1">Feature Projects</h1>
             <div class="cell-parent-feature">
 
@@ -64,13 +64,9 @@
                         <summary>A stock tracker web-app</summary>
 
                         <p><strong>stonks</strong> was one of my first projects, i started to self-teach me coding in
-                            2021
-                            and
-                            was
-                            looking for ideas that motivate me. At the
+                            2021 and was looking for ideas that motivate me. At the
                             time i was interested in the stock market and so i wanted to design an app that gave me a
-                            wide
-                            variety of insights into a specific stock.</p>
+                            wide variety of insights into a specific stock.</p>
                         <p>Hindsight: what a mess, but it worked, i learnt a lot and it was fun.</p>
 
 
@@ -121,12 +117,75 @@
             </div>
         </div>
 
+        <div class="content" id="feature-container-2">
+            <h1 class="container-h1-2">Feature Projects</h1>
+            <div class="flex-column  w-100 ">
 
-        <div class="do-container content">
+                <div class="cell shadow feature-cell">
+                    <div class="feature-logo"><img id="stonks-logo" src="stonks-logo.gif"></div>
+                    <details>
+                        <summary>A stock tracker web-app</summary>
+
+                        <p><strong>stonks</strong> was one of my first projects, i started to self-teach me coding in
+                            2021 and was looking for ideas that motivate me. At the
+                            time i was interested in the stock market and so i wanted to design an app that gave me a
+                            wide variety of insights into a specific stock.</p>
+                        <p>Hindsight: what a mess, but it worked, i learnt a lot and it was fun.</p>
+
+
+                        <p class="mt40 mb10">Technologies & Platforms used:</p>
+                        <div class="technologies">
+                            <span class="pill">HTML/CSS</span>
+                            <span class="pill">JavaScript</span>
+                            <span class="pill">Python</span>
+                            <span class="pill">Flask</span>
+                            <span class="pill-p">Heroku</span>
+                        </div>
+                    </details>
+                    <div class="flex-row-end">
+                        <a class="button" href="https://stonks-rm.herokuapp.com/">Try it out</a>
+                    </div>
+                </div>
+                <div class="cell shadow feature-cell">
+                    <div class="feature-logo">
+                        <h2>kauf</h2>
+                    </div>
+                    <details>
+                        <summary>A shopping-list web-app</summary>
+
+                        <p><strong>stonks</strong> was one of my first projects, i started to self-teach me coding in
+                            2021
+                            and
+                            was
+                            looking for ideas that motivate me. At the
+                            time i was interested in the stock market and so i wanted to design an app that gave me a
+                            wide
+                            variety of insights into a specific stock.</p>
+                        <p>Hindsight: what a mess, but it worked, i learnt a lot and it was fun.</p>
+
+
+                        <p class="mt40 mb10">Technologies & Platforms used:</p>
+                        <div class="technologies">
+                            <span class="pill">HTML/CSS</span>
+                            <span class="pill">JavaScript</span>
+                            <span class="pill">Python</span>
+                            <span class="pill">Flask</span>
+                            <span class="pill-p">Heroku</span>
+                        </div>
+                    </details>
+                    <div class="flex-row-end">
+                        <a class="button" href="https://stonks-rm.herokuapp.com/">Try it out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content" id="do-container">
             <h1 class="container-h1">What i've done</h1>
             <div>Coco, Arbeit bei uma? privat aktuell</div>
         </div>
-        <div class="can-container">
+        <div id="can-container">
             <h1>What i've learnt so far</h1>
             <div class="cell-parent">
                 <div class="cell shadow">
@@ -212,28 +271,69 @@
 
         </div>
 
-        <div class="me-container">
-            <div class="cell shadow">
-                Ich bin <strong>32&nbsp;Jahre</strong> alt, habe einen
-                <strong>M.Sc.&nbsp;in&nbsp;Betriebswirtschaft</strong> und über
-                <strong>vier&nbsp;Jahre&nbsp;Berufserfahrung</strong> im <strong>Online&#8209;Marketing</strong>
-                sowie als <strong>Projekt&nbsp;Manager</strong> und <strong>Product&nbsp;Owner.</strong>
-                </p>
-                <p>
-                    Die gemeinsame Arbeit an Webseiten und Apps hat mir dabei immer besonders viel Spaß gemacht,
-                    doch war ich beim eigentlichen Design und der Entwicklung nur Zuschauer oder grober Lenker.
-                </p>
-                <p>
-                    In mir wuchs der Wunsch, viel tiefer in die Materie von Software-Entwicklung und &#8209;Design
-                    einzusteigen!
+        <div class="content" id="me-container">
+            <h1 class="container-h1">About me</h1>
+            <div id="me-flex">
+                <div id="me-img-flex">
+                    <img src="marcmin.png" id="rounded-img">
+                    <h2>Marc</h2>
+                </div>
+                <div class="me-content-flex">
+                    <div class="highlight-text">
+                        <p>
+                            I am a 32&nbsp;years old <br>
+                            <em>M.Sc. in Business Administration</em><br>
+                            with <br><em>over four&nbsp;years&nbsp;of job experience</em><br>
+                            in Online&#8209;Marketing
+                            + as a Project&nbsp;Manager and Product&nbsp;Owner.
+                        </p>
+                        <br>
+                        <p>
+                            So how did i end up here?
+                        </p>
+                    </div>
+                    <br>
+                    <div class="cell shadow">
+                        <p>
+                            Working in the telecommunications sector, i experienced innovative environments and a push
+                            for
+                            more
+                            and more digitalisation in the working place as well as in products.
+                            While developing optimized websites, customer-oriented products and barrier-breaking apps
+                            from a
+                            business perspective,
+                            i really enjoyed working with the developers and designers, they always were at the core of
+                            success
+                            - and with that, a dream grew inside me:
+                            i want to design, create and realise ideas myself - ideas that may change and improve the
+                            world.
+                        </p>
+                        <br>
+                        <p>
+                            Since 2021, i pursue this dream to make it reality. Having started with self-taught courses
+                            online,
+                            like the excellent HarvardX's Introduction to Computer Science and Web Programming,
+                            i decided to take it a step further and go back to university to enroll in the B.Sc. in Code
+                            &
+                            Context at the University of Applied Sciences in Cologne.
+                            This gives me the chance to broaden my experience and strengthen my knowledge on designing
+                            great
+                            digital products.
+                        </p>
+                    </div>
+                </div>
 
-                    Und so habe ich mich dazu entschieden nochmal neu anzufangen:<br>
-                    <strong>Ich&nbsp;möchte&nbsp;Entwickler&nbsp;werden.</strong>
-                </p>
             </div>
-        </div>
 
     </main>
+    <footer>
+        <div class="footer-circle">
+            <div>hi</div>
+        </div>
+        <div class="footer-circle">
+            <div>hi</div>
+        </div>
+    </footer>
 </body>
 
 </html>
