@@ -15,18 +15,18 @@
 <body>
 
     <main>
-        <nav>
-            <span class="brand">reMarc</span>
-            <div class="menu">
-                <a href="#feature-container" class="menu-item" target="_self">Projects</a>
-                <a href="www.google.com" class="menu-item" target="_self">Skills</a>
-                <a href="" class="menu-item" target="_self">About</a>
-            </div>
-        </nav>
+
         <div class="welcome-wrapper content">
 
             <div class="welcome-container-left">
-
+                <nav>
+                    <span class="brand">reMarc</span>
+                    <div class="menu">
+                        <a href="#feature-container" class="menu-item" target="_self">Projects</a>
+                        <a href="www.google.com" class="menu-item" target="_self">Skills</a>
+                        <a href="" class="menu-item" target="_self">About</a>
+                    </div>
+                </nav>
                 <div>
                     <div class="welcome-headline">Hi, i am Marc.</div>
                     <div class="welcome-subline">An emerging software developer amplyfied by a solid business background
@@ -54,7 +54,7 @@
             </div>
 
         </div>
-        <div class="content" id="feature-container">
+        <!-- <div class="content" id="feature-container">
             <h1 class="container-h1">Feature Projects</h1>
             <div class="cell-parent-feature">
 
@@ -115,7 +115,100 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+
+        <div class="content flex-row">
+            <div class="left-content">
+                <h1 class="grey-text">Feature Projects</h1>
+                <div id="circle3"></div>
+                <div id="circle1"></div>
+
+
+            </div>
+            <div class="right-content">
+
+                <div class="feature-cell">
+                    <div class="feature-logo"><img id="stonks-logo" src="stonks-logo.gif"></div>
+                    <details>
+                        <summary>A stock tracker web-app</summary>
+
+                        <p><strong>stonks</strong> was one of my first projects, i started to self-teach me
+                            coding in 2021 and was looking for ideas that motivate me. At the
+                            time i was interested in the stock market and so i wanted to design an app that gave
+                            me a wide variety of insights into a specific stock. APIs are currently not kept up-to-date.
+                        </p>
+                        <p>Hindsight: what a mess, but it worked, i learnt a lot and it was fun.</p>
+
+                    </details>
+                    <p class="mt40 mb10">Technologies & Platforms used:</p>
+                    <div class="technologies">
+                        <span class="pill">HTML/CSS</span>
+                        <span class="pill">JavaScript</span>
+                        <span class="pill">Python</span>
+                        <span class="pill">Flask</span>
+                        <span class="pill">Heroku</span>
+                    </div>
+                    <div class="flex-row-end">
+                        <a class="button" href="https://stonks-rm.herokuapp.com/">Try it out</a>
+                    </div>
+                </div>
+
+                <div class="feature-cell">
+                    <div class="feature-logo">
+                        <h2>kauf</h2>
+                    </div>
+                    <details>
+                        <summary>A shopping-list web-app</summary>
+
+                        <p><strong>kauf</strong> is a project in Flutter and Dart, that i am currently working on.
+                            My goal is to develop a shopping list which fulfills my demands, looks nice, is easy to use
+                            and can be shared with others.
+                        </p>
+                        <p>I created a working frontend, that now needs to be connected with a backend.</p>
+
+
+
+                    </details>
+                    <p class="mt40 mb10">Technologies & Platforms used:</p>
+                    <div class="technologies">
+                        <span class="pill">Dart</span>
+                        <span class="pill">Flutter</span>
+                        <span class="pill">Firebase</span>
+                    </div>
+                    <div class="flex-row-end">
+                        <a class="button" href="https://stonks-rm.herokuapp.com/">Try it out</a>
+                    </div>
+                </div>
+                <div class="feature-cell">
+                    <div class="feature-logo">
+                        <h2>Joniland</h2>
+                    </div>
+                    <details>
+                        <summary>A short text-adventure</summary>
+
+                        <p><strong>Joniland</strong> was created for a university project, where we learned the basics
+                            of Java.
+                            At the same time i became a godfather and so I decided to dedicated this game to my
+                            grandchild.
+                            It was really fun to envision the experiences of a baby and to implement them as a
+                            text-adventure.</p>
+
+
+                    </details>
+                    <p class="mt40 mb10">Technologies & Platforms used:</p>
+                    <div class="technologies">
+                        <span class="pill">Java</span>
+                        <span class="pill">Maven</span>
+                    </div>
+                    <!-- <div class="flex-row-end">
+                        <a class="button" href="https://stonks-rm.herokuapp.com/">Try it out</a>
+                    </div> -->
+                </div>
+            </div>
+
         </div>
+
+
 
         <div class="content" id="feature-container-2">
             <h1 class="container-h1-2">Feature Projects</h1>
@@ -126,9 +219,13 @@
                     <details>
                         <summary>A stock tracker web-app</summary>
 
-                        <p><strong>stonks</strong> was one of my first projects, i started to self-teach me coding in
+                        <p><strong>stonks</strong> was one of my first projects, i started to self-teach me
+                            coding
+                            in
                             2021 and was looking for ideas that motivate me. At the
-                            time i was interested in the stock market and so i wanted to design an app that gave me a
+                            time i was interested in the stock market and so i wanted to design an app that gave
+                            me
+                            a
                             wide variety of insights into a specific stock.</p>
                         <p>Hindsight: what a mess, but it worked, i learnt a lot and it was fun.</p>
 
@@ -153,40 +250,59 @@
                     <details>
                         <summary>A shopping-list web-app</summary>
 
-                        <p><strong>stonks</strong> was one of my first projects, i started to self-teach me coding in
-                            2021
-                            and
-                            was
-                            looking for ideas that motivate me. At the
-                            time i was interested in the stock market and so i wanted to design an app that gave me a
-                            wide
-                            variety of insights into a specific stock.</p>
-                        <p>Hindsight: what a mess, but it worked, i learnt a lot and it was fun.</p>
+                        <p><strong>kauf</strong> is a project in Flutter and Dart, that i am currently working on.
+                            My goal is to develop a shopping list which fulfills my demands, looks nice, is easy to use
+                            and can be shared with others.
+                        </p>
+                        <p>I created a working frontend, that now needs to be connected with a backend.</p>
 
 
                         <p class="mt40 mb10">Technologies & Platforms used:</p>
                         <div class="technologies">
-                            <span class="pill">HTML/CSS</span>
-                            <span class="pill">JavaScript</span>
-                            <span class="pill">Python</span>
-                            <span class="pill">Flask</span>
-                            <span class="pill-p">Heroku</span>
+                            <span class="pill">Dart</span>
+                            <span class="pill">Flutter</span>
+                            <span class="pill-p">Firebase</span>
                         </div>
                     </details>
                     <div class="flex-row-end">
                         <a class="button" href="https://stonks-rm.herokuapp.com/">Try it out</a>
                     </div>
                 </div>
+                <div class="cell shadow feature-cell">
+                    <div class="feature-logo">
+                        <h2>Joniland</h2>
+                    </div>
+                    <details>
+                        <summary>A short text-adventure</summary>
+
+                        <p><strong>Joniland</strong> was created for a university project, where we learned the basics
+                            of Java.
+                            At the same time i became a godfather and so I decided to dedicated this game to my
+                            grandchild.
+                            It was really fun to envision the experiences of a baby and to implement them as a
+                            text-adventure.</p>
+
+                        <p class="mt40 mb10">Technologies & Platforms used:</p>
+                        <div class="technologies">
+                            <span class="pill">Java</span>
+                            <span class="pill">Maven</span>
+                        </div>
+                    </details>
+                    <!-- <div class="flex-row-end">
+                        <a class="button" href="https://stonks-rm.herokuapp.com/">Try it out</a>
+                    </div> -->
+                </div>
+
             </div>
         </div>
 
 
         <div class="content" id="do-container">
             <h1 class="container-h1">What i've done</h1>
-            <div>Coco, Arbeit bei uma? privat aktuell</div>
+            <div>Coco, Arbeit ... ?</div>
         </div>
-        <div id="can-container">
-            <h1>What i've learnt so far</h1>
+        <div class="content" id="can-container">
+            <h1 class="container-h1">What i've learnt so far</h1>
             <div class="cell-parent">
                 <div class="cell shadow">
                     <div class="row">
