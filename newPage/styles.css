@@ -42,6 +42,7 @@ main {
 svg {
     width: 30%;
     height: auto;
+    fill: #be89ff;
 }
 
 h2,
@@ -261,6 +262,14 @@ footer {
     z-index: -2;
 }
 
+.skill-header>#circle2 {
+    background-color: #be89ff;
+    position: relative;
+    top: -80px;
+    left: 400px;
+    z-index: -2;
+}
+
 
 #circle3 {
     /* align-self: baseline; */
@@ -277,10 +286,18 @@ footer {
 
 .left-content>#circle3 {
     position: relative;
-    top: -25px;
+    top: -35px;
     left: 20px;
     z-index: -1;
     background-color: #93FFD8;
+}
+
+.skill-header>#circle3 {
+    position: relative;
+    top: 0px;
+    left: 430px;
+    z-index: -1;
+    background-color: #f8f6f6;
 }
 
 #circle4 {
@@ -461,15 +478,6 @@ footer {
     background-color: #f8f6f6;
 }
 
-.feature-cell:hover {
-    background-color: #f2f0f0;
-}
-
-.feature-content {
-    padding: 20px 40px 40px 40px;
-}
-
-
 @media only screen and (max-width: 650px) {
     #feature-container-2 {
         flex-direction: column;
@@ -484,6 +492,10 @@ footer {
 
 
 
+}
+
+.skill-header {
+    height: 70px;
 }
 
 .flex-column {
@@ -501,8 +513,9 @@ footer {
 }
 
 .left-content {
-    flex-basis: 30%;
+    /* flex-basis: 30%; */
     margin-right: 60px;
+    min-width: 30%;
 }
 
 .right-content {
@@ -617,7 +630,7 @@ footer {
 }
 
 .feature-logo>h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 13px 0 0 0;
     color: #fff;
 }
@@ -657,6 +670,7 @@ footer {
 }
 
 .technologies {
+    margin: 0 40px;
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -668,6 +682,7 @@ footer {
     /* background-color: #333; */
     color: #333;
     padding: 8px 20px;
+    margin: 0 40px 40px 0;
     font-weight: 600;
     transition: 0.2s ease-out;
 }
@@ -685,25 +700,27 @@ footer {
 }
 
 details {
-    padding: 0 5px;
+    /* padding: 0 5px; */
     color: #333;
-    max-width: 700px;
+    /* max-width: 750px; */
 }
 
 details[open]>p {
     margin-top: 10px;
+    padding: 0 40px 0 40px;
 }
 
 summary {
     font-weight: 600;
     /* background-color: #eee; */
-    border: 2px solid #e1e1e1;
-    padding: 5px;
+    /* border: 2px solid #e1e1e1; */
+    /* padding: 5px; */
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
     transition: 0.2s ease-out;
-
+    padding: 20px 40px 20px 40px;
+    width: 100%;
 }
 
 summary:hover {
