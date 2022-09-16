@@ -253,6 +253,15 @@ footer {
     animation: element-moving 12s infinite linear;
 }
 
+.left-content>#circle2 {
+    background-color: #f8f6f6;
+    position: relative;
+    top: -50px;
+    left: 40px;
+    z-index: -2;
+}
+
+
 #circle3 {
     /* align-self: baseline; */
     position: absolute;
@@ -272,7 +281,6 @@ footer {
     left: 20px;
     z-index: -1;
     background-color: #93FFD8;
-
 }
 
 #circle4 {
@@ -448,11 +456,19 @@ footer {
 
 .feature-cell {
     margin: 10px 0px 20px 0px;
-    padding: 20px 40px 40px 40px;
+    /* padding: 20px 40px 40px 40px; */
     border-radius: 10px;
-
     background-color: #f8f6f6;
 }
+
+.feature-cell:hover {
+    background-color: #f2f0f0;
+}
+
+.feature-content {
+    padding: 20px 40px 40px 40px;
+}
+
 
 @media only screen and (max-width: 650px) {
     #feature-container-2 {
@@ -595,8 +611,17 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #ff8989;
 }
+
+.feature-logo>h2 {
+    font-size: 3rem;
+    margin: 13px 0 0 0;
+    color: #fff;
+}
+
 
 #stonks-logo {
     width: 250px;
