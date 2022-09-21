@@ -735,6 +735,7 @@ footer {
 
 .technologies {
     margin: 0 40px;
+    padding-bottom: 40px;
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -760,7 +761,6 @@ footer {
     display: flex;
     width: 100%;
     justify-content: end;
-    margin-top: 50px;
 }
 
 details {
