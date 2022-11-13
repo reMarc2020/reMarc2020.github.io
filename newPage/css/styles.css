@@ -88,12 +88,17 @@ a {
 nav {
     background-color: transparent;
     padding: 20px;
-    width: 100%;
+    max-width: 100%;
     z-index: 100;
     display: flex;
     flex-direction: row;
     justify-content: left;
     margin-left: 10px;
+
+    max-height: 100%;
+    position: fixed;
+    background-color: #8ef3cf;
+    border-radius: 15px;
 }
 
 main {
@@ -227,7 +232,7 @@ footer {
 
 .menu {
     margin-left: 20px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     display: inline;
 }
 
@@ -310,7 +315,7 @@ footer {
     font-weight: 900;
     display: block;
     color: #fff;
-    padding-top: 100px;
+    padding-top: 150px;
     animation: element-moving 10s infinite ease-in-out;
 
 }
