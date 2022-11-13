@@ -278,7 +278,7 @@ footer {
 
 }
 
-.cell-parent {
+.skill-cell-parent {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -498,12 +498,6 @@ footer {
         /* mix-blend-mode: luminosity; */
         opacity: 0.5;
         z-index: -1;
-    }
-
-    .cell-parent-feature {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     }
 
     #circle1,
@@ -900,8 +894,9 @@ summary:hover {
     display: none;
 }
 
-.cell {
+.skill-cell {
     /* margin: 20px 0; */
+    margin: auto;
     padding: 40px 40px;
     border-radius: 10px;
     /* background-color: #f9f9f9; */
@@ -911,35 +906,38 @@ summary:hover {
     transition: 100ms ease-in;
     display: flex;
     flex-direction: column;
-    justify-items: end;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.cell>h2 {
+.skill-cell>h2 {
     margin-bottom: 0;
     color: #444;
 }
 
-.cell>.row>.x {
+.skill-cell>.row>.x {
     color: #444;
 }
 
-.cell:hover {
+.skill-cell:hover {
     padding: 0 20px;
     background-color: #9469c9;
-    justify-items: start;
+    justify-content: start;
+
 }
 
-.cell:hover>.hide {
+.skill-cell:hover>.hide {
     display: block;
 }
 
-.cell:hover>h2 {
+.skill-cell:hover>h2 {
     margin-bottom: 10px;
     color: #fff;
 }
 
-.cell:hover svg,
-.cell:hover span {
+.skill-cell:hover svg,
+.skill-cell:hover span {
     display: none;
 }
 
