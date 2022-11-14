@@ -100,8 +100,14 @@ nav {
     background-color: rgba(142, 243, 207, 0.70);
     border-radius: 15px;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     /* margin: 0 20px; */
     justify-content: space-between;
+    transition: 500ms ease;
+}
+
+nav:hover {
+    background-color: rgba(142, 243, 207, 1);
 }
 
 main {
@@ -261,15 +267,15 @@ footer {
     padding-bottom: 8px;
 }
 
-.menu-item[href="#feature-container"]:hover {
+.menu-item[href="#feature-anchor"]:hover {
     background-color: #ff8989;
 }
 
-.menu-item[href="#skills-container"]:hover {
+.menu-item[href="#skills-anchor"]:hover {
     background-color: #be89ff;
 }
 
-.menu-item[href="#about-container"]:hover {
+.menu-item[href="#about-anchor"]:hover {
     background-color: #fff;
     color: #444;
 }
@@ -295,14 +301,6 @@ footer {
     }
 
 }
-
-/* 
-@media only screen and (max-width: 360px) {
-    body {
-        font-size: 0.95rem;
-    }
-} */
-
 
 .skill-cell-parent {
     display: grid;
@@ -526,10 +524,10 @@ footer {
         z-index: -1;
     }
 
-    #circle1,
-    #circle2,
-    #circle3,
-    #circle4 {
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4 {
         display: none;
     }
 
@@ -600,8 +598,13 @@ footer {
     flex-direction: row;
 }
 
-.flex-row+#skills-container {
+.flex-row-reverse {
+    display: flex;
     flex-direction: row-reverse;
+}
+
+#skills-container+.flex-row-reverse {
+    /* flex-direction: row-reverse; */
     justify-content: right;
 }
 
@@ -613,7 +616,7 @@ footer {
     /* flex-basis: 30%; */
     margin-right: 60px;
     min-width: 30%;
-    height: 120px;
+    /* height: 120px; */
 }
 
 #skills-container>.left-content {
@@ -629,6 +632,11 @@ footer {
     flex-grow: 3;
 }
 
+.left-content,
+.right-content {
+    min-height: 100px;
+}
+
 #skills-container>.right-content {
     text-align: right;
     flex-grow: 0;
@@ -641,7 +649,7 @@ footer {
         flex-direction: column;
     }
 
-    .flex-row+#skills-container {
+    .flex-row-reverse {
         flex-direction: column;
     }
 
@@ -721,7 +729,7 @@ footer {
     padding: 5px;
     /* margin-bottom: 20px; */
     /* background-color: rgb(255, 255, 255); */
-    opacity: 0.9;
+    /* opacity: 0.9; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -866,6 +874,14 @@ summary:hover {
 
 
 @media only screen and (max-width: 650px) {
+
+    .feature-logo {
+        height: 70px;
+    }
+
+    .feature-logo>h2 {
+        font-size: 1.9rem;
+    }
 
     #me-flex {
         flex-direction: column;
