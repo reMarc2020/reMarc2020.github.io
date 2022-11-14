@@ -966,6 +966,17 @@ summary:hover {
     display: none;
 }
 
+.skill-sources {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: end;
+}
+
+.skill-sources>.button {
+    margin: 0 0 20px 20px;
+}
+
 .footerimg {
     width: 3rem;
     margin-top: -1rem;
