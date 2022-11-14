@@ -5,6 +5,7 @@
     --grey: #444;
     --orange: #ff8989;
     --lightgrey: #f9f9f9;
+    --purple: #be89ff;
 }
 
 /* poppins-300 - latin */
@@ -123,7 +124,7 @@ main {
 svg {
     width: 30%;
     height: auto;
-    fill: #be89ff;
+    fill: var(--purple);
 }
 
 h2,
@@ -170,7 +171,7 @@ footer {
 }
 
 .purple-text {
-    color: #be89ff;
+    color: var(--purple);
     z-index: 10;
 }
 
@@ -366,7 +367,7 @@ footer {
 }
 
 .menu-item[href="#skills-anchor"]:hover {
-    background-color: #be89ff;
+    background-color: var(--purple);
 }
 
 .menu-item[href="#about-anchor"]:hover {
@@ -481,7 +482,7 @@ footer {
 }
 
 #skills-container>.right-content>.circle2 {
-    background-color: #be89ff;
+    background-color: var(--purple);
     position: relative;
     top: -60px;
     left: 0px;
@@ -541,14 +542,12 @@ footer {
 }
 
 .circle4 {
-    /* align-self: baseline; */
     position: absolute;
     top: 170px;
     width: 60px;
     height: 60px;
     border-radius: 100px;
-    /* background-color: #ffffff; */
-    background-color: #be89ff;
+    background-color: var(--purple);
 
     animation: element-moving 9s infinite linear;
     z-index: 0;
@@ -557,10 +556,7 @@ footer {
 #floating-img {
     align-self: flex-end;
     height: 350px;
-    /* float: right; */
     filter: grayscale();
-
-    /* margin-top: 110px; */
     z-index: 1;
 
 }
