@@ -173,6 +173,8 @@ footer {
 
 .grey-text {
     color: #444;
+    position: relative;
+    padding: 10px 10px 0 10px;
     z-index: 10;
 }
 
@@ -195,43 +197,53 @@ footer {
     height: 80px;
 }
 
-.footer-circle {
+.contact-circle {
     display: flex;
-    flex-direction: column;
+    align-self: center;
+    justify-self: center;
     align-content: center;
     justify-content: center;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     aspect-ratio: 1;
     border-radius: 50%;
-    background-color: #8ef3cf;
+    background-color: #444;
     transition: 0.2s ease;
     margin-bottom: 20px;
 }
 
-.footer-circle:hover {
-    width: 400px;
+.contact-circle:hover {
+    width: 300px;
     border-radius: 15px;
 }
 
-.footer-circle>div {
-    padding: 30px;
+.contact-circle>div {
+    /* padding: 30px; */
     text-align: center;
     font-weight: 600;
     color: #fff;
-    height: auto;
-    margin: 0 auto;
+    height: 100%;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
 }
 
-.footer-circle>div>a {
+.contact-circle>div>div>a {
+    color: #fff;
+}
+
+.contact-circle>div>div {
+    padding-left: 50px;
     opacity: 0;
-    transition: ease-in 0.2s;
-
+    display: none;
+    /* transition: ease-in 0.2s; */
 }
 
-.footer-circle:hover>div>a {
+.contact-circle:hover>div>div {
     opacity: 1;
-
+    display: block;
 }
 
 .brand {
@@ -366,6 +378,17 @@ footer {
     z-index: 1;
 }
 
+#feature-left>.circle1 {
+    position: relative;
+    top: -90px;
+    left: 90px;
+    width: 30px;
+    height: 30px;
+    background-color: #444;
+    z-index: 2;
+}
+
+
 .circle2 {
     /* align-self: baseline; */
     position: absolute;
@@ -377,20 +400,20 @@ footer {
     animation: element-moving 12s infinite linear;
 }
 
-.left-content>.circle2 {
-    background-color: #f8f6f6;
+#feature-left>.circle2 {
+    background-color: #ff8989;
     position: relative;
     top: -70px;
     left: 35px;
-    z-index: -2;
+    z-index: 1;
 }
 
 #skills-container>.right-content>.circle2 {
     background-color: #be89ff;
     position: relative;
-    top: -80px;
+    top: -60px;
     left: 0px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .circle3 {
@@ -408,19 +431,18 @@ footer {
 
 #feature-left>.circle3 {
     position: relative;
-    top: -35px;
+    top: -15px;
     left: 20px;
-    z-index: 1;
-    background-color: #ff8989;
+    z-index: 3;
+    background-color: #ffffff;
 }
 
 #skills-container>.right-content>.circle3 {
     position: relative;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    /* background-color: #f8f6f6; */
-    background-color: red;
+    top: -20px;
+    left: 40px;
+    z-index: 2;
+    background-color: #fff;
 
 }
 
@@ -624,7 +646,7 @@ footer {
     width: 100%;
 }
 
-#about-container>.left-content {
+#about-left {
     min-width: 17%;
 }
 
@@ -662,16 +684,23 @@ footer {
     width: 100%;
 }
 
-#me-container {
-    padding: 40px 40px 80px 40px;
+#about-highlight-container {
+    padding: 40px;
+    margin-bottom: 40px;
     background-color: #8ef3cf;
     /* margin: 10px 0px 20px 0px; */
     /* padding: 20px 40px 40px 40px; */
     border-radius: 10px;
 }
 
-#me-container>h1 {
-    z-index: 3;
+#about-text-container {
+    padding: 20px;
+}
+
+@media only screen and (max-width: 650px) {
+    #about-highlight-container {
+        padding: 20px;
+    }
 }
 
 .content {
@@ -679,7 +708,6 @@ footer {
     width: 100%;
     max-width: 1200px;
     border-radius: 10px;
-    /* margin-bottom: 80px; */
 }
 
 #do-container {
@@ -829,32 +857,11 @@ summary:hover {
     background-color: #e1e1e1;
 }
 
-#rounded-img {
+/* #rounded-img {
     width: 250px;
     border-radius: 50%;
     margin: 0 auto;
-}
-
-#me-flex {
-    display: flex;
-    flex-direction: row;
-
-}
-
-#me-img-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-content: center;
-
-    margin: 0 60px;
-
-}
-
-#me-img-flex>h2 {
-    text-align: center;
-    margin: 20px 0;
-}
+} */
 
 .highlight-text {
     font-size: 28px;
@@ -883,23 +890,8 @@ summary:hover {
         font-size: 1.9rem;
     }
 
-    #me-flex {
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-
-    }
-
-    #me-img-flex {
-        margin: 0;
-    }
-
     .highlight-text {
         font-size: 24px;
-    }
-
-    .container-h1 {
-        padding-bottom: 40px;
     }
 
 }
