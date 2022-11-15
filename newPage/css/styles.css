@@ -793,22 +793,6 @@ footer p {
     padding-bottom: 10px;
 }
 
-#do-container {
-    padding: 0 20px 50px 20px;
-    background-color: var(--grey);
-    color: #fff;
-}
-
-#can-container {
-    margin-bottom: 40px;
-    padding: 0 40px 50px 40px;
-    background-color: #f3f3f3;
-}
-
-#can-container>h1 {
-    color: #000;
-}
-
 .shadow {
     box-shadow:
         rgba(22, 31, 39, 0.32) 0px 8px 24px -6px,
@@ -935,7 +919,8 @@ details[open]>p {
 
 summary {
     font-weight: 600;
-    border-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     text-align: center;
     cursor: pointer;
     transition: 0.2s ease-out;
@@ -1043,9 +1028,84 @@ summary:hover {
     margin: 0 0 20px 20px;
 }
 
+.reason,
+.studies,
+.courses {
+    /* width: 50%; */
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.reason,
+.studies {
+    margin-bottom: 20px;
+}
+
+.reason p:last-child {
+    padding-bottom: 30px;
+}
+
+.reason summary,
+.studies summary,
+.courses summary {
+    border-radius: 10px;
+}
+
+.courses>details ul,
+.studies>details ul {
+    padding: 10px 25px;
+    margin-left: 50px;
+}
+
+.courses>details li,
+.studies>details li {
+    padding: 10px 0;
+}
+
+.courses>details li::marker,
+.studies>details li::marker {
+    color: var(--orange);
+}
+
+.courses>details li.li-done::marker,
+.studies>details li.li-done::marker {
+    color: var(--green);
+}
+
+.courses>details a,
+.studies>details a {
+    display: inline-block;
+    border: 1px solid var(--grey);
+    /* opacity: 0.5; */
+    margin: 10px 0;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: 0.2s ease-out;
+    /* text-decoration: underline; */
+}
+
+.courses>details a:hover,
+.studies>details a:hover {
+    background-color: var(--grey);
+    color: #fff;
+}
+
 .footerimg {
     width: 3rem;
     margin-top: -1rem;
     -webkit-filter: saturate(1.2);
     filter: saturate(1.2);
+}
+
+@media only screen and (max-width: 650px) {
+
+    .courses,
+    .studies {
+        width: 100%;
+    }
+
+    .courses>details ul {
+        margin-left: 10px;
+    }
 }
