@@ -249,8 +249,7 @@ footer {
     animation-play-state: paused;
 }
 
-.contact:hover>.contact-front,
-.contact:active>.contact-front {
+.contact:hover>.contact-front {
     animation-play-state: running;
 }
 
@@ -271,8 +270,7 @@ footer {
     }
 }
 
-.contact:hover>.contact-back,
-.contact:active>.contact-back {
+.contact:hover>.contact-back {
     animation-play-state: running;
 }
 
@@ -999,8 +997,7 @@ summary:hover {
     color: var(--grey);
 }
 
-.skill-cell:hover,
-.skill-cell:active {
+.skill-cell:hover {
     padding: 0 20px;
     background-color: var(--darkpurple);
     justify-content: start;
