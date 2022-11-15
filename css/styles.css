@@ -1019,8 +1019,12 @@ summary:hover {
 
 @media only screen and (max-width: 650px) {
 
-    .skill-cell>h2>a::after {
+    .skill-cell>h2::after {
         content: "\00A0\00A0\276F";
+    }
+
+    .skill-cell:hover>h2::after {
+        content: "";
     }
 }
 
