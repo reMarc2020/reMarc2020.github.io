@@ -1,544 +1,407 @@
 <!DOCTYPE html>
-<html lang="de">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+<html>
 
-        <link rel="icon" href="images/remarc-favicon.svg" sizes="any" type="image/svg+xml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
 
-        <!-- include Bootstrap v4.6 -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-        
-        <!-- include Bootstrap Icons -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <title>new remarc</title>
+    <link rel="stylesheet" href="css/styles.css">
 
-        <!-- include web font "Source Code Pro" by Paul D. Hunt -->
-        <link rel="preconnect" href="https://fonts.gstatic.com"> 
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,500;0,900;1,300;1,500&display=swap" rel="stylesheet">
+</head>
 
-        <!-- include own CSS-Variations -->
-        <link rel="stylesheet" href="style.css">
+<body>
 
+    <main id="start-anchor">
 
+        <div class="welcome-wrapper content">
 
-        <title>reMarc auf Github</title>
-    </head>
-    <body>
-        <div id="page-container">
-        <!-- Navigation bar -->
-        <nav class="navbar navbar-expand-sm">
-            <a href="index.html" class="navbar-brand"><h3>reMarc</h3></a>
-            <div class="mt-n4 collapse navbar-collapse">
-                <div class="speech-bubble text-center">
-                    <span class="px-1">hello, world!</span>
-                </div>
-            </div>
-            <!-- Nightmode toggle (for function, see bottom)-->   
-            <a class="btn btn-primary font-weight-bold btn-sm" id="nightmode"><i class="bi bi-moon"> Darkmode</i></a>
-            
-        </nav>
-        <!-- Funky headline-->
-
-        <div class="container mt-5 w-100" style="padding-bottom:1.5rem;">
-            <p class="heading mx-1">
-                <span class="text-hgrad">
-                    Hi.
-                    <br>
-                    Ich bin Marc
-                    <img src="images/memoji2.png" class="headingimg">
-
-                </span>
-                <br>
-                <span class="text-darkblue">
-                    und das ist mein Neustart
-                    <br>
-                    als Entwickler.
-                </span>
-            </p>
-    
-        </div>
-
-        
-        <!-- Intro -->
-        <div class="container mt-5">
-            <div class="row mx-1 lead intro p-4 text-justify">
-                Mit dieser Seite möchte ich meinen Fortschritt festhalten, wie auch die Projekte zeigen, an denen ich arbeite.
-                <br>
-                Angefangen bei den Grundlagen von Informatik und Webdesign, möchte ich nach und nach verschiedene Sprachen und Frameworks kennenlernen und verstehen.
-                <br>
-                Ich stehe erst am Anfang, doch bin motiviert zu lernen, Fehler zu machen und es immer wieder neu zu versuchen!
-            </div>
-        </div>
-
-
-        <!-- Skills -->
-        <div class="container mt-5">
-            <h4 class="pb-3 h-code">Fähigkeiten</h4>
-            <section class="container row">
-                <span class="col-xl-1 mt-2 font-weight-bold">Motivation:</span>
-                <div class="col skillsgrad rounded-pill mt-1 ml-4 text-right pt-1 pr-2" >
-                    100% <i class="bi bi-emoji-wink"></i>
-                </div>
-            </section>   
-            <section class="container row mt-2">
-                <span class="col-xl-1 mt-2 font-weight-bold">HTML/CSS:</span>
-                <div class="skills1 rounded-pill mt-1 ml-4 text-right pt-1 pr-2" style="min-width:40%">
-                    40%
-                </div>
-            </section>  
-            <section class="container row mt-2">
-                <span class="col-xl-1 mt-2 font-weight-bold">JavaScript:</span>
-                <div class="skills3 rounded-pill mt-1 ml-4 text-right pt-1 pr-2" style="min-width:25%">
-                    25%
-                </div>
-                
-            </section>   
-            <section class="container row mt-2">
-                <span class="col-xl-1 mt-2 font-weight-bold">Java:</span>
-                <div class="skills3 rounded-pill mt-1 ml-4 text-right pt-1 pr-2" style="min-width:20%">
-                    20%
-                </div>
-                
-            </section>     
-            <section class="container row mt-2">
-                <span class="col-xl-1 mt-2 font-weight-bold">Python:</span>
-                <div class="skills2 rounded-pill mt-1 ml-4 text-right pt-1 pr-2" style="min-width:15%">
-                    15%
-                </div>
-                
-            </section>    
-            
-            <section class="container row mt-2">
-                <span class="col-xl-1 mt-2 font-weight-bold">C:</span>
-                <div class="skills3 rounded-pill mt-1 ml-4 text-right pt-1 pr-2" style="min-width:6%">
-                    5%
-                </div>
-                
-            </section>   
-        </div>
-
-
-        <!-- Main content -->
-
-        <div class="container mt-5">
-            <h4 class="pb-3 h-code">Neu!</h4>
-            <div class="row align-items-center mx-1 coco px-3 py-4">
-                <div class="col-lg-3">
-                    <img src="https://coco.study/images/codeandcontext-white-alpha.svg" class="whoamiimg rounded-pill w-100">
-                    <h2 class="text-center pt-4 coco-text">Code & Context</h2>
-                    <h5 class="text-center pt-1">Bachelor of Science</h5>
-                    <p class="text-center"><i class="bi bi-clock"></i> 6-7 Semester</p>
-                </div>
-                <div class="col-lg-9 px-4 mb-3">
-                    <p class="outrop">
-                        Seit September 2021 studiere ich an der <strong>TH&nbsp;Köln</strong> im Studiengang <strong>Code & Context</strong>.
-                    </p>
-                    <p class="border-left pl-3 outrop">
-                        "Die Zukunft verantwortungsvoll gestalten – im Spannungsfeld von Informatik, Design & Entrepreneurship [...]
-                    
-                        Aus den Perspektiven Coding und Design konzipieren, gestalten und entwickeln wir digitale Produkte für die Gesellschaft von morgen und übermorgen."
-                    </p>     
-                    <p class="outrop">
-                        Code & Context ist ein interdisziplinärer Studiengang mit den Handungsfeldern <strong>Coding&nbsp;Software</strong>, <strong>Developing&nbsp;Things</strong>, <strong>Designing&nbsp;Futures</strong> und <strong>Creating&nbsp;Impact</strong>.
-                    </p>  
-                    
-                    <div class="row float-right">
-                        <a class="btn btn-primary btn-sm mt-1" href="https://www.th-koeln.de/studium/code--context-bachelor_62103.php">
-                            <i class="bi bi-arrow-right-circle-fill"></i> 
-                            Besuche Studiengang
-                        </a>
+            <div class="welcome-container-left">
+                <nav>
+                    <a href="#start-anchor" class="brand" target="_self">reMarc</a>
+                    <div class="menu">
+                        <a href="#feature-anchor" class="menu-item" target="_self">Projects</a>
+                        <a href="#skills-anchor" class="menu-item" target="_self">Skills</a>
+                        <a href="#about-anchor" class="menu-item" target="_self">About</a>
+                    </div>
+                </nav>
+                <div>
+                    <div class="welcome-headline">Hi, i am Marc.</div>
+                    <div class="welcome-subline">An emerging software developer amplyfied by a solid business background
                     </div>
                 </div>
             </div>
+            <div class="welcome-container-right">
+                <img id="floating-img" src="me_sw22sm-transparent.png"></img>
+                <!-- <div class="mobile-subline">An emerging software developer amplyfied by a solid business background</div> -->
+                <div style="position: relative; left: -120px;">
+                    <div class="circle1"></div>
+                </div>
+                <div style="position: relative; left: -50px; top:-150px">
+
+                    <div class="circle2"></div>
+                </div>
+                <div style="position: relative; left: -70px; top:-150px">
+
+                    <div class="circle3"></div>
+                </div>
+                <div style="position: relative; left: -300px; top:80px">
+
+                    <div class="circle4"></div>
+                </div>
+            </div>
+
         </div>
-        
-        <div class="container mt-5 pt-2">
 
-            <div class="row">
+        <div class="separator" id="feature-anchor"></div>
+        <div class="content flex-row grey-bg">
+            <div class="left-content" id="feature-left">
+                <h1 class="grey-text">Feature&nbsp;Projects</h1>
+                <div class="circle3"></div>
+                <div class="circle2"></div>
+            </div>
+            <div class="right-content">
 
-                <!-- Courses -->
-                <div class="col-sm px-3 pt-3">
-                    <h4 class="pb-3 h-code">Weiterbildung</h4>
-                    <ul class="list-group">
-                        
-                        <li class="list-group-item">
-                            <div class="row">
-                                <div class="col-10">
-                                    <h6>HarvardX CS50 </h6>
-                                    <h4 class="">
-                                        Introduction to Computer Science
-                                    </h4>
-                                    <p class="items small"><i class="bi bi-clock"></i> 110-220 Std.</p>
-                                </div>
+                <div class="feature-cell">
+                    <div class="feature-logo">
+                        <h2>stonks</h2>
+                    </div>
+                    <details>
+                        <summary>A stock tracker web-app</summary>
 
-                                <div class="col-2 d-flex justify-content-end">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check-circle mr-n4" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                        <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
-                                    </svg>
-                                </div>
-                                <div class="col">
+                        <p><strong>stonks</strong> was one of my first projects, i started to self-teach me
+                            coding in 2021 and was looking for ideas that motivate me. At the
+                            time i was interested in the stock market and so i wanted to design an app that gave
+                            me a wide variety of insights into a specific stock. APIs are currently not kept
+                            up-to-date.
+                        </p>
+                        <p>Hindsight: what a mess, but it worked, i learnt a lot and it was fun.</p>
+                        <p class="mt40 mb10">Technologies & Platforms used:</p>
+                        <div class="technologies">
+                            <span class="pill">HTML/CSS</span>
+                            <span class="pill">JavaScript</span>
+                            <span class="pill">Python</span>
+                            <span class="pill">Flask</span>
+                            <span class="pill">Heroku</span>
+                        </div>
+                        <div class="flex-row-end">
+                            <a class="button" href="https://stonks-rm.herokuapp.com/">Try it out</a>
+                        </div>
+                    </details>
 
-                                    <p class="border-left pl-3 text-muted text-justify">
-                                        "An introduction to the intellectual enterprises of computer science and the art of programming."
-                                    </p>           
-                                    <p class="text-justify">
-                                        In meinem Abschlussprojekt habe ich eine Einkaufslisten-Web-App mithilfe von Python, Flask, JSON und SQL entwickelt. Funktionen: Abhaken, Priorisierung, automatische Einkaufs-Vorschläge basierend auf Nutzereingaben.
-                                    </p>                           
-                                    <p>
-                                        <button class="btn btn-language btn-sm rounded-pill"> C </button>
-                                        <button class="btn btn-language btn-sm rounded-pill">Python</button>
-                                        <button class="btn btn-language btn-sm rounded-pill">SQL</button>
-                                        <button class="btn btn-language btn-sm rounded-pill">HTML/CSS</button>          
-                                        <button class="btn btn-framework btn-sm rounded-pill">Flask</button>                              
-
-                                    </p>
-                                </div>
-                                
-                            </div>
-                            <div class="row float-right">
-                                <a class="btn btn-primary btn-sm mt-1" href="https://cs50.harvard.edu/x/2021/">
-                                    <i class="bi bi-arrow-right-circle-fill"></i> 
-                                    Besuche Kurs
-                                </a>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row">
-                                <div class="col-10">
-                                    <h6>HarvardX CS50 </h6>
-                                    <h4 class="">
-                                        Web Programming with Python and JavaScript
-                                    </h4>
-                                    <p class="items small"><i class="bi bi-clock"></i> 72 - 108 Std.</p>
-                                    
-                                </div>
-                                <div class="col-2 d-flex justify-content-end">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check-circle mr-n4" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                        <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
-                                        </svg>
-                                </div>
-                                <div class="col">
-                                    <p class="border-left pl-3 text-muted text-justify">
-                                        "This course picks up where CS50 leaves off, diving more deeply into the design and implementation of web apps with Python, JavaScript, and SQL using frameworks like Flask, Django, and Bootstrap."
-                                    </p>
-                                    <p class="text-justify">
-                                        In meinem Abschlussprojekt habe ich eine Wetter-Web-App mithilfe von Python, Django und JavaScript entwickelt. Funktionen: automatische Stadt-Vorschläge basierend auf Nutzereingaben, Login, Hinzufügen zu Favoriten.
-                                    </p>  
-                                         
-                                    <p>
-                                        <button class="btn btn-language btn-sm rounded-pill">Python</button>
-                                        <button class="btn btn-language btn-sm rounded-pill">APIs</button>
-                                        <button class="btn btn-language btn-sm rounded-pill">Git</button>
-                                        <button class="btn btn-language btn-sm rounded-pill">JavaScript</button>
-                                        <button class="btn btn-language btn-sm rounded-pill">React</button>
-                                        <button class="btn btn-language btn-sm rounded-pill">HTML/CSS</button>
-                                        <button class="btn btn-framework btn-sm rounded-pill">Django</button>
-                                        <button class="btn btn-platform btn-sm rounded-pill">Github</button>                                    
-
-                                    </p>                                                                  
-                                    
-                                </div>
-                                
-                            </div>
-                            <div class="row float-right">                                
-                                <a class="btn btn-primary btn-sm mt-1" href="https://cs50.harvard.edu/web/2020/">
-                                    <i class="bi bi-arrow-right-circle-fill"></i> 
-                                    Besuche Kurs
-                                </a>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row">
-                                <div class="col-10">
-                                    <h6>The Odin Project</h6>
-                                    <h4 class="items">Foundations</h4>
-                                </div>
-                                <div class="col-2 d-flex justify-content-end">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-circle mr-n4" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                        </svg>
-                                </div>
-                                <div class="col">
-                                    <p class="border-left pl-3 text-muted text-justify">
-                                        "A hands-on introduction to all of the essential tools you'll need to build real, working websites. You'll learn what web developers actually do - the foundations you'll need for later courses."
-                                    </p>
-                                    <p>                                        
-                                        <button class="btn btn-language btn-sm rounded-pill">Git</button>
-                                        <button class="btn btn-language btn-sm rounded-pill">JavaScript</button>
-                                        <button class="btn btn-language btn-sm rounded-pill">HTML/CSS</button>                                        
-
-                                    </p>    
-                                    
-                                </div>
-                                
-                            </div>
-                            <div class="row float-right">                                                                       
-                                <a class="btn btn-primary btn-sm mt-1" href="https://www.theodinproject.com">
-                                    <i class="bi bi-arrow-right-circle-fill"></i> 
-                                    Besuche Kurs
-                                </a>                                
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row">
-                                <div class="col-10">
-                                    <h6>openHPI </h6>
-                                    <h4 class="">Programmieren mit Ruby</h4>
-                                    <p class="items small"><i class="bi bi-clock"></i> 12-24 Std.</p>
-                                </div>
-                                <div class="col-2 d-flex justify-content-end">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-circle mr-n4" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                        </svg>
-                                </div>
-                                <div class="col">
-                                    <!--<p class="border-left pl-3 text-muted text-justify">
-                                        "In diesem Kurs wollen wir mit euch Ruby von Grund auf kennenlernen - mit seiner Eleganz und seiner Ausdrucksstärke, aber auch mit seinen Tücken."
-                                    </p>
-                                -->
-                                    <p>                                        
-                                        <button class="btn btn-language btn-sm rounded-pill">Ruby</button>                                        
-
-                                    </p>    
-                                    
-                                </div>
-                                
-                            </div>
-                            <div class="row float-right">                                                                       
-                                <a class="btn btn-primary btn-sm mt-1" href="https://open.hpi.de/courses/ruby2018/">
-                                    <i class="bi bi-arrow-right-circle-fill"></i> 
-                                    Besuche Kurs
-                                </a>                                
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row">
-                                <div class="col-10">
-                                    <h6>Codecademy </h6>
-                                    <h4 class="">Learn HTML</h4>
-                                    <p class="items small"><i class="bi bi-clock"></i> 9 Std.</p>
-                                </div>
-                                <div class="col-2 d-flex justify-content-end">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check-circle mr-n4" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                        <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
-                                        </svg>
-                                </div>
-                                <div class="col">
-                                    <!--
-                                    <p class="border-left pl-3 text-muted text-justify">
-                                        "Learn the basics of HTML5 and start building & editing web pages."
-                                    </p>-->
-                                    <p>                                        
-                                        <button class="btn btn-language btn-sm rounded-pill">HTML/CSS</button>                                        
-
-                                    </p>    
-                                    
-                                </div>
-                                
-                            </div>
-                            <div class="row float-right">                                                                       
-                                <a class="btn btn-primary btn-sm mt-1" href="https://www.codecademy.com/learn/learn-html">
-                                    <i class="bi bi-arrow-right-circle-fill"></i> 
-                                    Besuche Kurs
-                                </a>                                
-                            </div>
-                        </li>
-                        <span class="text-muted small"><i class="bi bi-info-circle"></i> Angaben zum Stunden-Aufwand laut Kursbeschreibung</span>
-                    </ul>
                 </div>
 
+                <div class="feature-cell">
+                    <div class="feature-logo">
+                        <h2>kauf</h2>
+                    </div>
+                    <details>
+                        <summary>A shopping-list web-app</summary>
 
+                        <p><strong>kauf</strong> is a project in Flutter and Dart, that i am currently working on.
+                            My goal is to develop a shopping list which fulfills my demands, looks nice, is easy to
+                            use
+                            and can be shared with others.
+                        </p>
+                        <p>I created a working frontend, that now needs to be connected with a backend.</p>
 
+                        <p class="mt40 mb10">Technologies & Platforms used:</p>
+                        <div class="technologies">
+                            <span class="pill">Dart</span>
+                            <span class="pill">Flutter</span>
+                            <span class="pill">Firebase</span>
+                        </div>
+                        <div class="flex-row-end">
+                            <a class="button" href="https://stonks-rm.herokuapp.com/">Try it out</a>
+                        </div>
+                    </details>
+                </div>
+                <div class="feature-cell">
+                    <div class="feature-logo">
+                        <h2>Joniland</h2>
+                    </div>
+                    <details>
+                        <summary>A short text-adventure</summary>
 
-                
-                <!-- Projects -->
-                <div class="col-lg px-3 pt-3">
-                    <h4 class="pb-3 h-code">Projekte</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <div class="row">
-                                <div class="col-10">
-                                    <h6>Website</h6>
-                                    <h4 class="items">Meine Github Page</h4>
-                                </div>
-                                <div class="col-2 d-flex justify-content-end">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-repeat ani mr-n4" viewBox="0 0 16 16">
-                                        <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
-                                        <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
-                                      </svg>
-                                </div>
-                                <div class="col">
-                                    <p class="text-justify">
-                                        Hier zeige ich meinen Fortschritt auf dem Weg zum Entwickler-Dasein.
-                                    </p>
-                                    <p>
-                                        <button class="btn btn-language btn-sm rounded-pill">HTML/CSS</button>
-                                        <button class="btn btn-language btn-sm rounded-pill">Javascript</button>  
-                                        <button class="btn btn-platform btn-sm rounded-pill">Github</button>
-                                    </p>
-                                    
-                                </div>
-                                
-                            </div>
-                            <div class="row float-right text-muted"> 
-                                    Du bist hier!
-                            </div>
-                        </li> 
-                        <li class="list-group-item">
-                            <div class="row">                                
-                                <div class="col-10">
-                                    <h6>Web-App</h6>
-                                    <h4 class="items">stonks-rm</h4>
-                                </div>
-                                <div class="col-2 d-flex justify-content-end">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-gear ani mr-n4" viewBox="0 0 16 16">
-                                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
-                                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
-                                      </svg>                                      
-                                </div>
-                                <div class="col">
-                                    <!--<p class="text-muted">
-                                        Logo:
-                                        <img class="img-gray rounded p-1 mb-2" src="images/stonks-logo.gif" style="width:10rem; height:3rem">
-                                    </p>-->
-                                    <p class="text-justify">
-                                        Meine erste vollständig selbstentwickelte Web-App.
-                                        <br>
-                                        Mit stonks-rm kann der Nutzer einfach und schnell relevante Informationen zu US-amerikanischen Aktien abfragen.
-                                    </p>
-                                    
-                                    <p>
-                                        <button class="btn btn-language btn-sm rounded-pill">Python</button>
-                                        <button class="btn btn-language btn-sm rounded-pill">HTML/CSS</button>
-                                        <button class="btn btn-language btn-sm rounded-pill">Javascript</button>    
-                                        <button class="btn btn-framework btn-sm rounded-pill">Flask</button>                                    
-                                        <button class="btn btn-platform btn-sm rounded-pill">Github</button>
-                                        <button class="btn btn-platform btn-sm rounded-pill">Heroku</button>
-                                    </p>
-                                                                        
-                                </div>
-                                
-                            </div>
-                            <div class="row float-right mt-1">
-                                    <a class="btn btn-primary btn-sm mr-2" href="stonks.html">
-                                        <i class="bi bi-card-text"></i>
-                                        Projekt-Seite
-                                    </a>                                          
-                                    <a class="btn btn-primary btn-sm" href="https://stonks-rm.herokuapp.com">
-                                        <i class="bi bi-arrow-right-circle-fill"></i> 
-                                        Besuche die App
-                                    </a>            
-                            </div>        
-                                            
-                        </li>                        
-                        <li class="list-group-item">
-                            ...
-                        </li>
-                    </ul>
+                        <p><strong>Joniland</strong> was created for a university project, where we learned the
+                            basics
+                            of Java.
+                            At the time i became a godfather and so I decided to dedicate this game to my
+                            grandchild.
+                            It was really fun to envision the experiences of a baby and to implement them as a
+                            text-adventure.</p>
+                        <p class="mt40 mb10">Technologies & Platforms used:</p>
+                        <div class="technologies">
+                            <span class="pill">Java</span>
+                            <span class="pill">Maven</span>
+                        </div>
+
+                    </details>
                 </div>
             </div>
         </div>
 
-        <div class="container mt-5">
-            <h4 class="pb-3 h-code  px-1">Wer bin ich?</h4>
-            <div class="row align-items-center mx-1 outro px-3 py-4">
-                
-                <div class="col-md-3">
-                    <img src="images/marcmin.png" class="whoamiimg rounded-pill w-100">
-                    <h2 class="text-center pt-2">Marc</h2>
-                </div>
-                <div class="col-md-9  text-justify px-4 mb-3">
-                    <p class="outrop">
-                    Ich bin <strong>32&nbsp;Jahre</strong> alt, habe einen <strong>M.Sc.&nbsp;in&nbsp;Betriebswirtschaft</strong> und über <strong>vier&nbsp;Jahre&nbsp;Berufserfahrung</strong> im <strong>Online&#8209;Marketing</strong> sowie als <strong>Projekt&nbsp;Manager</strong> und <strong>Product&nbsp;Owner.</strong>
-                    </p>
-                    <p class="outrop">
-                    Die gemeinsame Arbeit an Webseiten und Apps hat mir dabei immer besonders viel Spaß gemacht, doch war ich beim eigentlichen Design und der Entwicklung nur Zuschauer oder grober Lenker.
-                    </p>
-                    <p class="outrop">
-                    In mir wuchs der Wunsch, viel tiefer in die Materie von Software-Entwicklung und &#8209;Design einzusteigen!
-                    
-                    Und so habe ich mich dazu entschieden nochmal neu anzufangen:<br> <strong>Ich&nbsp;möchte&nbsp;Entwickler&nbsp;werden.</strong>
-                    </p>
+        <div class="separator" id="skills-anchor"></div>
+
+        <div class="content flex-row-reverse grey-bg" id="skills-container">
+            <div class="right-content">
+                <h1 class="grey-text">Skills</h1>
+                <div class="circle3"></div>
+                <div class="circle2"></div>
+            </div>
+
+
+            <div class="left-content">
+                <div class="skill-cell-parent">
+                    <div class="skill-cell">
+                        <svg viewBox="0 0 128 128">
+                            <path
+                                d="M19.569 27l8.087 89.919 36.289 9.682 36.39-9.499L108.431 27H19.569zM91.61 47.471l-.507 5.834L90.88 56H48.311l1.017 12h40.54l-.271 2.231-2.615 28.909-.192 1.69L64 106.964v-.005l-.027.012-22.777-5.916L39.65 84h11.168l.791 8.46 12.385 3.139.006-.234v.012l12.412-2.649L77.708 79H39.153l-2.734-30.836L36.152 45h55.724l-.266 2.471zM27.956 1.627h5.622v5.556h5.144V1.627h5.623v16.822h-5.623v-5.633h-5.143v5.633h-5.623V1.627zm23.782 5.579h-4.95V1.627h15.525v5.579h-4.952v11.243h-5.623V7.206zm13.039-5.579h5.862l3.607 5.911 3.603-5.911h5.865v16.822h-5.601v-8.338l-3.867 5.981h-.098l-3.87-5.981v8.338h-5.502V1.627zm21.736 0h5.624v11.262h7.907v5.561H86.513V1.627z">
+                            </path>
+                        </svg>
+                        <h2>HTML & CSS</h2>
+                        <p class="hide">I have built multiple small websites on my own, I am able to utilise frameworks
+                            like
+                            bootstrap to
+                            simplify/speed up the development of responsive, user centric and visually appealing
+                            websites
+                        </p>
+                    </div>
+                    <div class="skill-cell">
+                        <svg viewBox="0 0 128 128">
+                            <path
+                                d="M2 1v125h125V1H2zm66.119 106.513c-1.845 3.749-5.367 6.212-9.448 7.401-6.271 1.44-12.269.619-16.731-2.059-2.986-1.832-5.318-4.652-6.901-7.901l9.52-5.83c.083.035.333.487.667 1.071 1.214 2.034 2.261 3.474 4.319 4.485 2.022.69 6.461 1.131 8.175-2.427 1.047-1.81.714-7.628.714-14.065C58.433 78.073 58.48 68 58.48 58h11.709c0 11 .06 21.418 0 32.152.025 6.58.596 12.446-2.07 17.361zm48.574-3.308c-4.07 13.922-26.762 14.374-35.83 5.176-1.916-2.165-3.117-3.296-4.26-5.795 4.819-2.772 4.819-2.772 9.508-5.485 2.547 3.915 4.902 6.068 9.139 6.949 5.748.702 11.531-1.273 10.234-7.378-1.333-4.986-11.77-6.199-18.873-11.531-7.211-4.843-8.901-16.611-2.975-23.335 1.975-2.487 5.343-4.343 8.877-5.235l3.688-.477c7.081-.143 11.507 1.727 14.756 5.355.904.916 1.642 1.904 3.022 4.045-3.772 2.404-3.76 2.381-9.163 5.879-1.154-2.486-3.069-4.046-5.093-4.724-3.142-.952-7.104.083-7.926 3.403-.285 1.023-.226 1.975.227 3.665 1.273 2.903 5.545 4.165 9.377 5.926 11.031 4.474 14.756 9.271 15.672 14.981.882 4.916-.213 8.105-.38 8.581z">
+                            </path>
+                        </svg>
+
+                        <h2>Javascript</h2>
+                        <p class="hide">I have built various functions to interact with websites and backends, e.g.
+                            implementing dark
+                            mode functionality using jQuery or making API-calls to a backend and implementing the data
+                            into
+                            the website
+                        </p>
+
+                    </div>
+                    <div class="skill-cell">
+                        <svg viewBox="0 0 128 128">
+                            <path
+                                d="M53.595 67.817c-13.224 3.694 8.044 11.325 24.88 4.112-2.757-1.071-4.735-2.309-4.735-2.309-7.508 1.419-10.99 1.531-17.805.753-5.625-.644-2.34-2.556-2.34-2.556zm22.864-7.207c-9.95 1.915-15.698 1.854-22.979 1.103-5.629-.582-1.944-3.311-1.944-3.311-14.563 4.834 8.106 10.318 28.459 4.365-2.162-.761-3.536-2.157-3.536-2.157zm7.799-41.731s-29.439 7.351-15.38 23.552c4.151 4.778-1.088 9.074-1.088 9.074s10.533-5.437 5.696-12.248c-4.518-6.349-7.982-9.502 10.772-20.378zM37.48 81.305c34.324 5.563 62.567-2.506 53.666-6.523 0 0 2.431 2.005-2.679 3.555-9.715 2.943-40.444 3.831-48.979.117-3.066-1.335 2.687-3.187 4.496-3.576 1.887-.409 2.965-.334 2.965-.334-3.412-2.404-22.055 4.718-9.469 6.761zm41.868-27.42c1.65-1.126 3.93-2.104 3.93-2.104s-6.492 1.161-12.961 1.704c-7.918.664-16.412.795-20.676.225-10.095-1.35 5.534-5.063 5.534-5.063s-6.07-.411-13.533 3.199c-8.827 4.269 21.832 6.214 37.706 2.039zm3.865 10.432c-.074.2-.322.425-.322.425 21.546-5.664 13.624-19.965 3.322-16.345-.903.319-1.378 1.063-1.378 1.063s.571-.23 1.845-.496c5.207-1.084 12.669 6.972-3.467 15.353zM65.006 48.492c-3.179-7.186-13.957-13.471.005-24.498 17.41-13.742 8.476-22.682 8.476-22.682 3.604 14.197-12.711 18.486-18.6 27.328-4.01 6.024 1.969 12.499 10.119 19.852zm18.79 35.651c-13.219 2.488-29.524 2.199-39.191.603 0 0 1.98 1.64 12.157 2.294 15.484.99 39.269-.551 39.832-7.878 0-.001-1.082 2.776-12.798 4.981zM51.131 99.535c-2.887 0-5.351.714-7.408 1.622l.624 2.493c1.619-.595 3.618-1.147 5.674-1.147 2.85 0 3.979 1.147 3.979 3.521V108h-1.2c-6.921 0-10.044 2.585-10.044 6.624 0 3.479 2.059 5.407 5.933 5.407 2.49 0 4.351-.845 6.088-2.35l.316 2.319H58v-14.492c0-3.599-1.924-5.973-6.869-5.973zM54 115.037c-1 1.266-2.893 1.978-4.279 1.978-1.973 0-2.988-1.371-2.988-3.27 0-2.056 1.202-3.745 5.794-3.745H54v5.037zm15.611.644l-.835-3.608L65.02 100h-4.39l6.051 20h5.026c2.884-7 4.943-14 6.086-20h-4.271c-.671 5-2.016 10.424-3.911 15.681zm18.404-16.146c-2.889 0-5.411.714-7.467 1.622l.596 2.493c1.621-.595 3.722-1.147 5.778-1.147 2.846 0 4.078 1.147 4.078 3.521V108h-1.428c-6.923 0-10.045 2.585-10.045 6.624 0 3.479 2.056 5.407 5.93 5.407 2.492 0 4.349-.845 6.091-2.35l.318 2.319H95v-14.492c0-3.599-2.044-5.973-6.985-5.973zm-1.411 17.462c-1.975 0-3.046-1.363-3.046-3.261 0-2.055 1.149-3.736 5.736-3.736H91v5h-.067c-1.465 1-2.947 1.997-4.329 1.997zM36 115.373c0 3.271-.445 4.638-.979 5.701-.615 1.193-2.053 2.475-3.601 3.269l1.934 2.345c2.032-.749 3.943-2.078 5.092-3.757 1.15-1.723 1.554-3.491 1.554-7.867V93h-4v22.373z">
+                            </path>
+                        </svg>
+                        <h2>Java</h2>
+                        <p class="hide">I have built multiple small- to medium-sized apps, like a Pong game and a Text
+                            adventure
+                            utilising tools like Processing, Maven and Springboot</p>
+
+                    </div>
+                    <div class="skill-cell">
+                        <svg viewBox="0 0 128 128">
+                            <path
+                                d="M40 68V57.921C40 50.948 46.218 45 53.383 45h21.102C80.359 45 84 39.96 84 34.062V13.945c0-5.726-4.306-10.026-10.04-10.981a62.801 62.801 0 00-10.743-.862c-3.611.017-7.339.324-10.374.862C43.902 4.542 42 7.848 42 13.945V22h21v3H34.891c-6.14 0-11.516 3.53-13.198 10.552-1.939 8.047-2.025 13.202 0 21.605C23.195 63.411 26.782 68 32.921 68H40zm12.054-51.372c-2.19 0-3.964-1.795-3.964-4.013 0-2.229 1.773-4.039 3.964-4.039 2.182 0 3.964 1.811 3.964 4.039 0 2.218-1.782 4.013-3.964 4.013zm54.121 18.924C104.658 29.438 101.759 25 95.612 25H87v9.062C87 41.335 81.516 48 74.485 48H53.383C47.603 48 42 52.403 42 58.193V78.31c0 5.725 5.388 9.093 10.974 10.734 6.686 1.967 12.781 2.322 20.782 0C79.074 87.504 84 84.406 84 78.31V71H63v-3h32.611c6.14 0 8.428-4.416 10.563-10.843 2.206-6.618 2.112-13.115.001-21.605zM75.814 75.625c2.19 0 3.965 1.795 3.965 4.015 0 2.227-1.774 4.037-3.965 4.037-2.182 0-3.963-1.811-3.963-4.037 0-2.22 1.781-4.015 3.963-4.015zm-40.903 36.424c0-3.757-1.072-5.686-3.214-5.791a6.03 6.03 0 00-2.495.409c-.646.231-1.082.461-1.311.692v8.968c1.371.86 2.588 1.26 3.649 1.197 2.247-.148 3.371-1.971 3.371-5.475zm2.643.157c0 1.909-.447 3.493-1.348 4.753-1.003 1.427-2.394 2.16-4.172 2.201-1.34.043-2.721-.378-4.142-1.258v8.151l-2.298-.82V107.14c.377-.462.862-.859 1.451-1.196 1.368-.798 3.031-1.207 4.987-1.228l.033.032c1.788-.022 3.166.712 4.134 2.201.902 1.366 1.355 3.117 1.355 5.257zm14.049 5.349c0 2.56-.257 4.333-.77 5.318-.516.986-1.497 1.773-2.945 2.359-1.174.463-2.444.714-3.808.757l-.38-1.448c1.386-.188 2.362-.378 2.928-.566 1.114-.377 1.878-.955 2.298-1.73.337-.631.503-1.835.503-3.618v-.599a11.809 11.809 0 01-4.941 1.068c-1.132 0-2.13-.354-2.99-1.068-.966-.777-1.449-1.764-1.449-2.958v-9.566l2.299-.787v9.63c0 1.028.332 1.82.996 2.376s1.524.822 2.578.803c1.054-.022 2.183-.431 3.382-1.228v-11.234h2.299v12.491zm8.973 1.479a9.457 9.457 0 01-.757.032c-1.3 0-2.314-.309-3.038-.93-.722-.622-1.084-1.479-1.084-2.573v-9.054h-1.574v-1.446h1.574v-3.84l2.296-.817v4.657h2.583v1.446h-2.583v8.991c0 .862.231 1.474.694 1.83.397.295 1.029.463 1.889.506v1.198zm13.917-.189h-2.298v-8.873c0-.902-.211-1.68-.631-2.329-.485-.734-1.159-1.102-2.024-1.102-1.054 0-2.372.556-3.954 1.668v10.636h-2.298V97.637l2.298-.725v9.659c1.469-1.068 3.073-1.604 4.816-1.604 1.218 0 2.203.41 2.958 1.228.757.817 1.134 1.836 1.134 3.053v9.597h-.001zm12.218-7.157c0-1.444-.274-2.636-.82-3.579-.649-1.149-1.657-1.756-3.021-1.818-2.52.146-3.778 1.951-3.778 5.412 0 1.587.262 2.912.79 3.976.674 1.356 1.685 2.024 3.033 2.002 2.531-.02 3.796-2.017 3.796-5.993zm2.518.015c0 2.055-.526 3.765-1.575 5.131-1.154 1.528-2.749 2.296-4.783 2.296-2.017 0-3.589-.768-4.723-2.296-1.028-1.366-1.542-3.076-1.542-5.131 0-1.932.556-3.556 1.668-4.879 1.174-1.403 2.718-2.107 4.627-2.107 1.909 0 3.463.704 4.66 2.107 1.111 1.323 1.668 2.947 1.668 4.879zm13.178 7.142h-2.299v-9.376c0-1.028-.31-1.831-.928-2.409-.619-.576-1.443-.855-2.472-.833-1.091.021-2.13.378-3.116 1.069v11.549h-2.299v-11.833c1.323-.963 2.54-1.592 3.652-1.886 1.049-.274 1.974-.41 2.771-.41.545 0 1.059.053 1.542.158.903.209 1.637.596 2.203 1.164.631.629.946 1.384.946 2.267v10.54z">
+                            </path>
+                        </svg>
+                        <h2>Python</h2>
+                        <p class="hide">I created python backends for small web-apps with Flask and Django, managing
+                            data
+                            and/or
+                            making
+                            api-calls to external services, e.g. a shopping list app or stock exchange checker</p>
+
+                    </div>
+                    <div class="skill-cell">
+                        <svg viewBox="0 0 128 128">
+                            <path
+                                d="M12.3 64.2L76.3 0h39.4L32.1 83.6zM76.3 128h39.4L81.6 93.9l34.1-34.8H76.3L42.2 93.5z">
+                            </path>
+                        </svg>
+                        <h2>Dart & Flutter</h2>
+                        <p class="hide">I can utilise my basic language and Flutter framework knowledge to bugfix app
+                            code
+                            and
+                            implement
+                            new functionalities on a small scale</p>
+                    </div>
                 </div>
             </div>
+
         </div>
-        
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container text-center text-muted pt-4 mt-4 mb-n3">
-                Made in Hamburg & Cologne by Marc.
-                <img src="images/memoji.png" class="footerimg">
+        <div class="separator" id="about-anchor"></div>
+
+        <div class="content flex-row grey-bg">
+            <div class="left-content" id="about-left">
+                <h1 class="grey-text">About me</h1>
+                <div class="circle3"></div>
+                <div class="circle2"></div>
+            </div>
+            <div class="right-content">
+
+                <div id="about-highlight-container">
+
+                    <div class="highlight-text">
+                        <p class="rightside-text">
+                            33&nbsp;years old,
+                            <em>M.Sc. in Business Administration</em><br>
+                            with
+                            <em>over four years of job experience</em>
+                            <br>as an <br>Online-Marketeer
+                            + Project Manager +
+                            Product Owner.
+                            <br>
+                            <br>
+                            and now <em>i am becoming a developer!</em>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex-column">
+                    <div class="reason">
+                        <details>
+                            <summary>So how did i get here?</summary>
+                            <p>
+                                Working in the telecommunications sector, i experienced innovative environments
+                                and a push for
+                                more and more digitalisation in the workplace as well as in products.
+                                While developing optimized websites, customer-oriented products and
+                                barrier-breaking apps from a business perspective,
+                                i really enjoyed working with developers and designers, who always were at
+                                the core of success - and with that, a dream grew inside me:
+                                i want to design, create and realise ideas myself - ideas that may change and
+                                improve the world.
+                            </p>
+                            <br>
+                            <p>
+                                Since 2021, i pursue this dream to make it reality. Having started with
+                                self-taught courses online,
+                                like the excellent HarvardX's Introduction to Computer Science and Web
+                                Programming, i decided to take it a step further and go back to university to enroll in
+                                the
+                                B.Sc. in Code & Context at the University of Applied Sciences in Cologne.
+                                This gives me the chance to broaden my experience and strengthen my knowledge on
+                                designing great digital products.
+                            </p>
+                    </div>
+
+                    <div class="studies">
+                        <details>
+                            <summary>My studies</summary>
+                            <ul>
+                                <li>
+                                    <strong>B.Sc. Code & Context</strong>
+                                    <br>
+                                    University of Applied Sciences Cologne
+                                    <br>
+                                    <small>(duration: 6-7 semesters, currently in third)</small>
+                                    <br>
+                                    <a href="https://coco.study">Visit studies</a>
+                                </li>
+                                <li class="li-done">
+                                    <strong>M.Sc. Business Administration</strong>
+                                    <br>
+                                    University of Hamburg
+                                    <br>
+                                    <small>(completed)</small>
+                                    <br>
+                                    <a
+                                        href="https://www.uni-hamburg.de/campuscenter/studienangebot/studiengang.html?1241532969">Visit
+                                        studies</a>
+                                </li>
+                                <li class="li-done">
+                                    <strong>B.Sc. Business Administration</strong>
+                                    <br>
+                                    University of Münster
+                                    <br>
+                                    <small>(completed)</small>
+                                    <br>
+                                    <a
+                                        href="https://www.wiwi.uni-muenster.de/fakultaet/de/studium/studiengaenge/bachelor/bwl">Visit
+                                        studies</a>
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                    <div class="courses">
+                        <details>
+                            <summary>My advanced training</summary>
+                            <ul>
+                                <li>
+                                    <strong>The Odin Project - Foundations</strong>
+                                    <br>
+                                    <small>(ongoing)</small>
+                                    <br>
+                                    <a href="https://www.theodinproject.com">Visit course</a>
+                                </li>
+                                <li class="li-done">
+                                    <strong>HarvardX CS50 - Web Programming with Python and JavaScript</strong>
+                                    <br>
+                                    <small>(72-108 hrs, completed)</small>
+                                    <br>
+                                    <a href="https://cs50.harvard.edu/web/2020/">Visit course</a>
+                                </li>
+                                <li class="li-done">
+                                    <strong>Interneting is hard - HTML & CSS</strong>
+                                    <br>
+                                    <small>(completed)</small>
+                                    <br>
+                                    <a href="https://www.internetingishard.com/html-and-css/">Visit course</a>
+                                </li>
+                                <li class="li-done">
+                                    <strong>HarvardX CS50 - Introduction to Computer Science</strong>
+                                    <br>
+                                    <small>(110-220 hrs, completed)</small>
+                                    <br>
+                                    <a href="https://cs50.harvard.edu/x/2021/">Visit course</a>
+                                </li>
+
+                            </ul>
+                        </details>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="separator"></div>
+        <footer class="content">
+
+            <div class="contact">
+                <div class="contact-white1"></div>
+                <div class="contact-white2"></div>
+
+                <div class="contact-front">
+                    <strong>Contact me</strong>
+                </div>
+                <div class="contact-back">
+                    <a href="mailto:xyz">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                                d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                            <path
+                                d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/remarc2020">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="made-by">
+                <p>Made in Cologne by Marc.
+                    <img src="../images/memoji.png" class="footerimg">
+                </p>
+                <small>Built with pure HTML & CSS.</small>
                 <br>
+                <small>This website does not use cookies or other methods to track you.</small>
                 <small>Diese Website nutzt keine Cookies oder andere Methoden, um dich zu tracken.</small>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f5bf0f" fill-opacity="1" d="M0,64L34.3,106.7C68.6,149,137,235,206,224C274.3,213,343,107,411,80C480,53,549,107,617,154.7C685.7,203,754,245,823,234.7C891.4,224,960,160,1029,144C1097.1,128,1166,160,1234,160C1302.9,160,1371,128,1406,112L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+
         </footer>
-    </div>
+    </main>
 
-
-        <!-- Nightmode function -->
-        <script>           
-            $(document).ready(function(){
-                if (localStorage.getItem('light') == undefined) {
-                    localStorage.setItem('light', 'true');
-                }
-
-                if (localStorage.getItem('light') == 'false' ) {
-                    $("body").toggleClass("night-body");
-                    $(".navbar-brand").toggleClass("brand-night");
-                    $(".btn-primary").toggleClass("btn-night");
-                    $(".btn-primary:hover").toggleClass("btn-night:hover");
-                    $(".list-group-item, .intro").toggleClass("list-night");
-                    $(".skills1, .skills2, .skills3").toggleClass("skills-night");
-                    $(".text-muted").toggleClass("muted-night");
-                    $(".text-darkblue").toggleClass("text-white");
-                    
-
-                    if (on == 0) {
-                        $(".bi-moon").replaceWith("<i class='bi bi-sun'> Lightmode</i>");
-                        on++;
-                    } else {
-                        $(".bi-sun").replaceWith("<i class='bi bi-moon'> Darkmode</i>");
-                        on--;
-                    };                    
-                }
-            });
-        </script>
-        <script> 
-            $(document).ready(function(){
-                var on = 0;
-                $("#nightmode").click(function(){
-                    $("body").toggleClass("night-body");
-                    $(".navbar-brand").toggleClass("brand-night");
-                    $(".btn-primary").toggleClass("btn-night");
-                    $(".btn-primary:hover").toggleClass("btn-night:hover");
-                    $(".list-group-item, .intro").toggleClass("list-night");
-                    $(".skills1, .skills2, .skills3").toggleClass("skills-night");
-                    $(".text-muted").toggleClass("muted-night");
-                    $(".text-darkblue").toggleClass("text-white");
-
-                    if (on == 0) {
-                        $(".bi-moon").replaceWith("<i class='bi bi-sun'> Lightmode</i>");
-                        on++;
-                    } else {
-                        $(".bi-sun").replaceWith("<i class='bi bi-moon'> Darkmode</i>");
-                        on--;
-                    };
-                    if (localStorage.getItem('light') == 'true' ) { 
-                        localStorage.setItem('light', 'false');
-                    } else {
-                        localStorage.setItem('light', 'true');
-                    }
-
-                });
-            })
-        </script>
-
-    </body>
-
+</body>
 
 </html>
