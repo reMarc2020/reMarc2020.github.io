@@ -1105,7 +1105,8 @@ summary:hover {
         width: 100%;
     }
 
-    .courses>details ul {
+    .courses>details ul,
+    .studies>details ul {
         margin-left: 10px;
     }
 }
