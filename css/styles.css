@@ -6,6 +6,7 @@
     --orange: #ff8989;
     --lightgrey: #f9f9f9;
     --purple: #be89ff;
+    --darkpurple: #9469c9;
 }
 
 /* poppins-300 - latin */
@@ -996,9 +997,10 @@ summary:hover {
     color: var(--grey);
 }
 
-.skill-cell:hover {
+.skill-cell:hover,
+.skill-cell:active {
     padding: 0 20px;
-    background-color: #9469c9;
+    background-color: var(--darkpurple);
     justify-content: start;
 
 }
