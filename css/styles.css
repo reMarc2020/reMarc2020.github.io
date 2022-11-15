@@ -998,19 +998,22 @@ summary:hover {
 }
 
 .skill-cell:hover,
-.skill-cell:active {
+.skill-cell:active,
+.skill-cell:focus {
     padding: 0 20px;
     background-color: var(--darkpurple);
     justify-content: start;
 }
 
 .skill-cell:hover>.hide,
-.skill-cell:active>.hide {
+.skill-cell:active>.hide,
+.skill-cell:focus>.hide {
     display: block;
 }
 
 .skill-cell:hover>h2,
-.skill-cell:active>h2 {
+.skill-cell:active>h2,
+.skill-cell:focus>h2 {
     margin-bottom: 10px;
     color: #fff;
 }
@@ -1018,7 +1021,9 @@ summary:hover {
 .skill-cell:hover svg,
 .skill-cell:hover span,
 .skill-cell:active svg,
-.skill-cell:active span {
+.skill-cell:active span,
+.skill-cell:focus svg,
+.skill-cell:focus span {
     display: none;
 }
 
