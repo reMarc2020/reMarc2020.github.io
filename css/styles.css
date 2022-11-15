@@ -997,11 +997,11 @@ summary:hover {
     color: var(--grey);
 }
 
-.skill-cell:hover {
+.skill-cell:hover,
+.skill-cell:active {
     padding: 0 20px;
     background-color: var(--darkpurple);
     justify-content: start;
-
 }
 
 .skill-cell:hover>.hide {
