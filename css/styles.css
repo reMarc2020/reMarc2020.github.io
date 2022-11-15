@@ -1004,17 +1004,21 @@ summary:hover {
     justify-content: start;
 }
 
-.skill-cell:hover>.hide {
+.skill-cell:hover>.hide,
+.skill-cell:active>.hide {
     display: block;
 }
 
-.skill-cell:hover>h2 {
+.skill-cell:hover>h2,
+.skill-cell:active>h2 {
     margin-bottom: 10px;
     color: #fff;
 }
 
 .skill-cell:hover svg,
-.skill-cell:hover span {
+.skill-cell:hover span,
+.skill-cell:active svg,
+.skill-cell:active span {
     display: none;
 }
 
