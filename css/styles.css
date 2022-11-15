@@ -249,7 +249,8 @@ footer {
     animation-play-state: paused;
 }
 
-.contact:hover>.contact-front {
+.contact:hover>.contact-front,
+.contact:active>.contact-front {
     animation-play-state: running;
 }
 
@@ -270,7 +271,8 @@ footer {
     }
 }
 
-.contact:hover>.contact-back {
+.contact:hover>.contact-back,
+.contact:active>.contact-back {
     animation-play-state: running;
 }
 
