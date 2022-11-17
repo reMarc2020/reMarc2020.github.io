@@ -200,7 +200,6 @@ footer {
     footer {
         flex-direction: column;
         padding: 60px 20px 30px 20px;
-
     }
 }
 
@@ -380,12 +379,6 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-    nav {
-        padding: 20px 10px 20px 10px;
-        margin: 0;
-        left: 20px;
-        right: 20px;
-    }
 
     .menu-item {
         font-size: 0.9rem;
@@ -399,7 +392,15 @@ footer {
     .contact {
         margin-bottom: 40px;
     }
+}
 
+@media only screen and (max-width: 450px) {
+    nav {
+        padding: 20px 10px 20px 10px;
+        margin: 0;
+        left: 20px;
+        right: 20px;
+    }
 }
 
 .welcome-wrapper {
@@ -746,6 +747,10 @@ footer {
     }
 
     .right-content:is(#feature-right, #about-right) {
+        width: 100%;
+    }
+
+    .left-content {
         width: 100%;
     }
 }
