@@ -698,7 +698,7 @@ footer {
 
 .left-content {
     margin-right: 40px;
-    min-width: 25%;
+    width: 25%;
 }
 
 #skills-container>.left-content {
@@ -713,6 +713,11 @@ footer {
 .right-content {
     flex-grow: 1;
 }
+
+.right-content:is(#feature-right, #about-right) {
+    width: 75%;
+}
+
 
 .left-content,
 .right-content {
@@ -735,8 +740,13 @@ footer {
         flex-direction: column;
     }
 
-    .left-content {
+    .left-content#feature-left {
         margin-right: 0px;
+        white-space: nowrap;
+    }
+
+    .right-content:is(#feature-right, #about-right) {
+        width: 100%;
     }
 }
 
@@ -979,6 +989,15 @@ summary:hover {
     .skill-cell:hover>h2::after {
         content: "";
     }
+
+    .skill-cell:hover {
+        justify-content: center;
+    }
+
+    .skill-cell:hover>h2 {
+        margin-top: 0px;
+    }
+
 }
 
 
