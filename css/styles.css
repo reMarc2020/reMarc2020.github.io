@@ -187,13 +187,12 @@ footer {
     z-index: 10;
 }
 
-
 .grey-bg {
     background-color: var(--lightgrey);
     padding: 20px 20px 60px 20px;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
     .grey-bg {
         padding: 10px 10px 30px 10px;
     }
@@ -380,7 +379,7 @@ footer {
     color: var(--grey);
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
     nav {
         padding: 20px 10px 20px 10px;
         margin: 0;
@@ -401,12 +400,6 @@ footer {
         margin-bottom: 40px;
     }
 
-}
-
-.skill-cell-parent {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
 .welcome-wrapper {
@@ -433,7 +426,6 @@ footer {
     color: #fff;
     padding-top: 150px;
     animation: element-moving 10s infinite ease-in-out;
-
 }
 
 .welcome-subline {
@@ -468,7 +460,6 @@ footer {
     background-color: var(--grey);
     z-index: 2;
 }
-
 
 .circle2 {
     position: absolute;
@@ -568,7 +559,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
 
     .menu-item {
         opacity: 0.5;
@@ -592,38 +583,30 @@ footer {
 
     .welcome-container-left {
         background-image: url('../me_sw22sm-transparent.png');
-        background-position: right bottom;
+        background-position: bottom right;
         background-repeat: no-repeat;
         background-blend-mode: luminosity;
         padding: 0;
     }
 
     .welcome-headline {
-        /* mix-blend-mode: multiply; */
         color: #fff;
         margin-top: 70px;
         margin-bottom: 150px;
-
-
+        padding-left: 35px;
+        padding-right: 35px;
     }
-
-
 
     .welcome-subline {
         display: none;
-        /* padding-top: 70px;
-        padding-bottom: 30px; */
     }
 
     #floating-img {
         display: none;
         position: absolute;
-        /* top: 0; */
-        /* margin-top: 70px; */
         max-width: 100%;
         height: auto;
         filter: grayscale();
-        /* mix-blend-mode: luminosity; */
         opacity: 0.5;
         z-index: -1;
     }
@@ -634,16 +617,17 @@ footer {
     .circle4 {
         display: none;
     }
-
-
-
 }
 
-@media only screen and (max-width: 400px) {
+
+@media only screen and (max-width: 450px) {
     .welcome-container-left {
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-blend-mode: luminosity;
+        background-position: bottom left;
+        background-size: 100%;
+    }
+
+    .welcome-headline {
+        padding-top: 30px;
     }
 
 }
@@ -714,8 +698,8 @@ footer {
 }
 
 .left-content {
-    margin-right: 60px;
-    min-width: 30%;
+    margin-right: 40px;
+    min-width: 25%;
 }
 
 #skills-container>.left-content {
@@ -728,7 +712,7 @@ footer {
 }
 
 .right-content {
-    flex-grow: 3;
+    flex-grow: 1;
 }
 
 .left-content,
@@ -741,7 +725,7 @@ footer {
     flex-grow: 0;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
 
     .flex-row {
         display: flex;
@@ -768,7 +752,7 @@ footer {
     padding: 20px;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
     #about-highlight-container {
         padding: 20px;
     }
@@ -911,7 +895,7 @@ summary:hover {
 }
 
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
 
     .feature-logo {
         height: 70px;
@@ -936,6 +920,12 @@ summary:hover {
     display: none;
 }
 
+.skill-cell-parent {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
 .skill-cell {
     margin: auto;
     padding: 40px 40px;
@@ -943,6 +933,7 @@ summary:hover {
     background-color: #fff;
     color: #fff;
     height: 280px;
+    max-width: 380px;
     transition: 100ms ease-in;
     display: flex;
     flex-direction: column;
@@ -980,7 +971,7 @@ summary:hover {
     display: none;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
 
     .skill-cell>h2::after {
         content: "\00A0\00A0\276F";
@@ -1063,7 +1054,7 @@ li.li-done::marker {
     filter: saturate(1.2);
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
 
     .courses,
     .studies {
