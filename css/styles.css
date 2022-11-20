@@ -670,6 +670,39 @@ footer {
 
 }
 
+.feature-img {
+    height: 300px;
+    border-radius: 10px;
+}
+
+.feature-img:hover {
+    transform: scale(1.5);
+    height: auto;
+    max-width: 100%;
+}
+
+.feature-images {
+    margin: 20px 40px;
+    padding-bottom: 40px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media only screen and (max-width: 800px) {
+    .feature-img {
+        height: auto;
+        width: 80%;
+        margin-right: 50px;
+    }
+
+    .feature-img:hover {
+        transform: scale(1.3);
+        height: auto;
+        max-width: 100%;
+    }
+}
+
 .skill-header {
     height: 70px;
 }
